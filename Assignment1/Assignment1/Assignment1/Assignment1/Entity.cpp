@@ -28,3 +28,8 @@ void Entity::updateCurrent(const GameTimer& gt)
 
 	move(mV.x, mV.y, 0);
 }
+
+void Entity::updateChildren(const GameTimer& gt)
+{
+	
+}

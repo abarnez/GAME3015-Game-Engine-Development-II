@@ -78,7 +78,7 @@ public:
 	void					move(float x, float y, float z);
 private:
 	virtual void			updateCurrent(const GameTimer& gt);
-	void					updateChildren(const GameTimer& gt);
+	virtual void			updateChildren(const GameTimer& gt);
 
 	virtual void			drawCurrent() const;
 	void					drawChildren() const;

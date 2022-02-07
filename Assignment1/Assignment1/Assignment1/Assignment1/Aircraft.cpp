@@ -20,12 +20,30 @@ Aircraft::Aircraft(Type type, Game* game) : Entity(game)
 
 }
 
+
+void Aircraft::updateCurrent(const GameTimer& gt)
+{
+	XMFLOAT3 pos = this->getWorldPosition();
+	XMFLOAT2 vel = this->getVelocity();
+	//vel.x = 5.0f;
+	if (pos.x >= 6 || pos.x <= -6) {
+		vel.x = -vel.x;
+
+	}
+	this->setVelocity(vel);
+	OutputDebugString(L"Hello world\n");
+
+	XMFLOAT2 mV;
+	mV.x = mVelocity.x * gt.DeltaTime();
+	mV.y = mVelocity.y * gt.DeltaTime();
+
+	move(mV.x, mV.y, 0);
+}
+
 void Aircraft::drawCurrent() const
 {
 	renderer->World = getTransform();
 	renderer->NumFramesDirty++;
-	
-	
 }
 
 

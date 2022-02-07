@@ -19,6 +19,7 @@ public:
 	void Strafe(float d);
 
 private:
+	void				updateCurrent(const GameTimer& gt);
 	virtual void		drawCurrent() const;
 	virtual void		buildCurrent();
 

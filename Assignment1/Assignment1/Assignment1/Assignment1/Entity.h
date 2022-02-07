@@ -11,6 +11,7 @@ public:
 	XMFLOAT2			getVelocity() const;
 
 	virtual	void		updateCurrent(const GameTimer& gt);
+	virtual	void		updateChildren(const GameTimer& gt);
 
 public:
 	XMFLOAT2		mVelocity;
