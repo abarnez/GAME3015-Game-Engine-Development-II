@@ -76,7 +76,7 @@ public:
 	XMFLOAT4X4				getTransform() const;
 
 	void					move(float x, float y, float z);
-private:
+protected:
 	virtual void			updateCurrent(const GameTimer& gt);
 	virtual void			updateChildren(const GameTimer& gt);
 
@@ -88,7 +88,7 @@ private:
 protected:
 	Game* game;
 	RenderItem* renderer;
-private:
+//private:
 	XMFLOAT3				mWorldPosition;
 	XMFLOAT3				mWorldRotation;
 	XMFLOAT3				mWorldScaling;

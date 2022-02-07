@@ -31,13 +31,9 @@ void Aircraft::updateCurrent(const GameTimer& gt)
 
 	}
 	this->setVelocity(vel);
-	OutputDebugString(L"Hello world\n");
+	//OutputDebugString(L"Hello world\n");
 
-	XMFLOAT2 mV;
-	mV.x = mVelocity.x * gt.DeltaTime();
-	mV.y = mVelocity.y * gt.DeltaTime();
-
-	move(mV.x, mV.y, 0);
+	Entity::updateCurrent(gt);
 }
 
 void Aircraft::drawCurrent() const
