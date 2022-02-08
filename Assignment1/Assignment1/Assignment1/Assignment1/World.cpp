@@ -13,14 +13,6 @@ World::World(Game* game)
 
 void World::update(const GameTimer& gt)
 {
-	//XMFLOAT3 pos = raptor->getWorldPosition();
-	//XMFLOAT2 vel = raptor->getVelocity();
-	////vel.x = 5.0f;
-	//if ( pos.x >= 6 ||pos.x <= -6) {
-	//	vel.x = -vel.x;
-	//
-	//}
-	//raptor->setVelocity(vel);
 	mSceneGraph->update(gt);
 
 }

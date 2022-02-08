@@ -40,5 +40,7 @@ void Entity::updateChildren(const GameTimer& gt)
 		mV.y = mVelocity.y * gt.DeltaTime();
 
 		child->move(mV.x, mV.y, 0);
+
+		//child->update(gt);
 	}
 }
