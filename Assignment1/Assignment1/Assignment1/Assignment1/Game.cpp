@@ -179,6 +179,7 @@ void Game::OnMouseMove(WPARAM btnState, int x, int y)
 
 void Game::OnKeyboardInput(const GameTimer& gt)
 {
+	
 	const float dt = gt.DeltaTime();
 
 	mCamera.GetLook();
