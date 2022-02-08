@@ -225,7 +225,22 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 			mCamera.Strafe(10.0f * dt);
 		}
 	}
-
+	if (GetAsyncKeyState('E') & 0x8000)
+	{
+		bool hit = false;
+		if (!hit)
+		{
+			mCamera.Pedestal(10.0f * dt);
+		}
+	}
+	if (GetAsyncKeyState('Q') & 0x8000)
+	{
+		bool hit = false;
+		if (!hit)
+		{
+			mCamera.Pedestal(-10.0f * dt);
+		}
+	}
 
 	mCamera.UpdateViewMatrix();
 }

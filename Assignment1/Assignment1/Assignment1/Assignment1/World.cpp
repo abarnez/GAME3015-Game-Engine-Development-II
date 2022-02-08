@@ -36,7 +36,7 @@ void World::buildScene()
 {
 	std::unique_ptr<Aircraft> player(new Aircraft(Aircraft::Eagle, mGame));
 	mPlayerAircraft = (Aircraft*)player.get();
-	mPlayerAircraft->setPosition(0, 0.1, 0.0);
+	mPlayerAircraft->setPosition(0, 2.5, 0);
 	mPlayerAircraft->setScale(0.1, 0.1, 0.1);
 	mPlayerAircraft->setVelocity(5, mScrollSpeed);
 	mSceneGraph->attachChild(std::move(player));
@@ -45,7 +45,7 @@ void World::buildScene()
 
 	std::unique_ptr<Aircraft> enemy(new Aircraft(Aircraft::Raptor, mGame));
 	raptor = (Aircraft*)enemy.get();
-	raptor->setPosition(2, 0.1, -1);
+	raptor->setPosition(2, 2, -1);
 	raptor->setScale(0.1, 0.1, 0.1);
 	raptor->setVelocity(5, mScrollSpeed);
 	mPlayerAircraft->attachChild(std::move(enemy));
@@ -54,10 +54,9 @@ void World::buildScene()
 
 	std::unique_ptr<Aircraft> enemy2(new Aircraft(Aircraft::Raptor, mGame));
 	raptor2 = (Aircraft*)enemy2.get();
-	raptor2->setPosition(-2, 0.1, -1);
+	raptor2->setPosition(-2, 2, -1);
 	raptor2->setScale(0.1, 0.1, 0.1);
 	raptor2->setVelocity(5, mScrollSpeed);
-	//mSceneGraph->attachChild(std::move(enemy2));
 	mPlayerAircraft->attachChild(std::move(enemy2));
 
 	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(mGame));

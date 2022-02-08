@@ -33,21 +33,12 @@ void Entity::updateChildren(const GameTimer& gt)
 {
 	for (Ptr& child : mChildren)
 	{
-		OutputDebugString(L"Updating Children\n");
-		XMFLOAT3 mV;
-		mV.x = this->getWorldPosition().x;
-		mV.y = this->getWorldPosition().y;
-		mV.z = this->getWorldPosition().z;
+		//OutputDebugString(L"Updating Children\n");
 
-		child->setPosition(mV.x, mV.y, mV.z);
+		XMFLOAT2 mV;
+		mV.x = mVelocity.x * gt.DeltaTime();
+		mV.y = mVelocity.y * gt.DeltaTime();
+
+		child->move(mV.x, mV.y, 0);
 	}
-	//for (Ptr& child : mChildren)
-	//{
-	//	XMFLOAT3 mV;
-	//	mV.x = mParent->getWorldPosition().x;
-	//	mV.y = mParent->getWorldPosition().y;
-	//	
-	//	//child->update(gt);
-	//}
-	//SceneNode::updateChildren(gt);
 }
