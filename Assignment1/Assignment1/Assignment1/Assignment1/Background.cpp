@@ -1,17 +1,17 @@
-#include "SpriteNode.h"
+#include "Background.h"
 #include "Game.h"
 
-SpriteNode::SpriteNode(Game* game) : Entity(game)
+bckGround::bckGround(Game* game) : Entity(game)
 {
 }
 
-void SpriteNode::drawCurrent() const
+void bckGround::drawCurrent() const
 {
 	renderer->World = getTransform();
 	renderer->NumFramesDirty++;
 }
 
-void SpriteNode::buildCurrent()
+void bckGround::buildCurrent()
 {
 	auto render = std::make_unique<RenderItem>();
 	renderer = render.get();

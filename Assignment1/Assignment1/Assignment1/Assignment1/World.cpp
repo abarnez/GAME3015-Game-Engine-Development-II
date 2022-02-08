@@ -62,16 +62,16 @@ void World::buildScene()
 	raptor2->setVelocity(5, mScrollSpeed, 0);
 	mPlayerAircraft->attachChild(std::move(enemy2));
 
-	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(mGame));
-	mBackground = (SpriteNode*)backgroundSprite.get();
+	std::unique_ptr<bckGround> backgroundSprite(new bckGround(mGame));
+	mBackground = (bckGround*)backgroundSprite.get();
 	//mBackground->setPosition(mWorldBounds.left, mWorldBounds.top);
 	mBackground->setPosition(0, 0, 2.0);
 	mBackground->setScale(1.0, 1.0, 1);
 	mBackground->setVelocity(0.0, 0.0, -1.0);
 	mSceneGraph->attachChild(std::move(backgroundSprite));
 
-	std::unique_ptr<SpriteNode> backgroundSprite2(new SpriteNode(mGame));
-	mBackground2 = (SpriteNode*)backgroundSprite2.get();
+	std::unique_ptr<bckGround> backgroundSprite2(new bckGround(mGame));
+	mBackground2 = (bckGround*)backgroundSprite2.get();
 	//mBackground->setPosition(mWorldBounds.left, mWorldBounds.top);
 	mBackground2->setPosition(0, 0, 18);
 	mBackground2->setScale(1.0, 1.0, 1);

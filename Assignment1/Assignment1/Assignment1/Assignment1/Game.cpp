@@ -54,11 +54,6 @@ bool Game::Initialize()
 void Game::OnResize()
 {
 	D3DApp::OnResize();
-
-	// The window resized, so update the aspect ratio and recompute the projection matrix.
-	//XMMATRIX P = XMMatrixPerspectiveFovLH(0.25f * MathHelper::Pi, AspectRatio(), 1.0f, 1000.0f);
-	//XMStoreFloat4x4(&mProj, P);
-
 	mCamera.SetLens(0.25f * MathHelper::Pi, AspectRatio(), 1.0f, 1000.0f);
 }
 
@@ -151,117 +146,23 @@ void Game::Draw(const GameTimer& gt)
 
 void Game::OnMouseDown(WPARAM btnState, int x, int y)
 {
-	mLastMousePos.x = x;
-	mLastMousePos.y = y;
-
-	SetCapture(mhMainWnd);
 }
 
 void Game::OnMouseUp(WPARAM btnState, int x, int y)
 {
-	ReleaseCapture();
 }
 
 void Game::OnMouseMove(WPARAM btnState, int x, int y)
 {
-	if ((btnState & MK_LBUTTON) != 0)
-	{
-		// Make each pixel correspond to a quarter of a degree.
-		float dx = XMConvertToRadians(0.25f * static_cast<float>(x - mLastMousePos.x));
-		float dy = XMConvertToRadians(0.25f * static_cast<float>(y - mLastMousePos.y));
-
-		mCamera.Pitch(dy);
-		mCamera.RotateY(dx);
-	}
-	mLastMousePos.x = x;
-	mLastMousePos.y = y;
 }
 
 void Game::OnKeyboardInput(const GameTimer& gt)
 {
-	
-	const float dt = gt.DeltaTime();
-
-	mCamera.GetLook();
-	float tmin = 0;
-	float buffer = 0.5;
-	XMFLOAT3  oppositef3(-1, -1, -1);
-	XMVECTOR opposite = XMLoadFloat3(&oppositef3);
-
-	if (GetAsyncKeyState('W') & 0x8000)
-	{
-		bool hit = false;
-
-		if (!hit)
-		{
-			mCamera.Walk(10.0f * dt);
-
-		}
-	}
-
-	if (GetAsyncKeyState('S') & 0x8000)
-	{
-		bool hit = false;
-		if (!hit)
-		{
-			mCamera.Walk(-10.0f * dt);
-		}
-
-	}
-	if (GetAsyncKeyState('A') & 0x8000)
-	{
-		bool hit = false;
-		if (!hit)
-		{
-			mCamera.Strafe(-10.0f * dt);
-		}
-
-
-	}
-	if (GetAsyncKeyState('D') & 0x8000)
-	{
-		bool hit = false;
-		if (!hit)
-		{
-			mCamera.Strafe(10.0f * dt);
-		}
-	}
-	if (GetAsyncKeyState('E') & 0x8000)
-	{
-		bool hit = false;
-		if (!hit)
-		{
-			mCamera.Pedestal(10.0f * dt);
-		}
-	}
-	if (GetAsyncKeyState('Q') & 0x8000)
-	{
-		bool hit = false;
-		if (!hit)
-		{
-			mCamera.Pedestal(-10.0f * dt);
-		}
-	}
-
 	mCamera.UpdateViewMatrix();
 }
 
 void Game::UpdateCamera(const GameTimer& gt)
 {
-	// Convert Spherical to Cartesian coordinates.
-	//mEyePos.x = mRadius * sinf(mPhi) * cosf(mTheta);
-	//mEyePos.z = mRadius * sinf(mPhi) * sinf(mTheta);
-	//mEyePos.y = mRadius * cosf(mPhi);
-
-	//// Build the view matrix.
-	//XMVECTOR pos = XMVectorSet(mEyePos.x, mEyePos.y, mEyePos.z, 1.0f);
-	//XMVECTOR target = XMVectorZero();
-	//XMVECTOR up = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f);
-
-	//XMMATRIX view = XMMatrixLookAtLH(pos, target, up);
-	//XMStoreFloat4x4(&mView, view);
-
-
 }
 
 void Game::AnimateMaterials(const GameTimer& gt)
@@ -345,12 +246,7 @@ void Game::UpdateMainPassCB(const GameTimer& gt)
 	mMainPassCB.AmbientLight = { 1.0f, 1.0f, 1.0f, 1.0f };
 	mMainPassCB.Lights[0].Direction = { 0.57735f, -0.57735f, 0.57735f };
 	mMainPassCB.Lights[0].Strength = { 1.0f, 1.0f, 0.0f };
-	/*
-	mMainPassCB.Lights[1].Direction = { -0.57735f, -0.57735f, 0.57735f };
-	mMainPassCB.Lights[1].Strength = { 0.3f, 0.3f, 0.3f };
-	mMainPassCB.Lights[2].Direction = { 0.0f, -0.707f, -0.707f };
-	mMainPassCB.Lights[2].Strength = { 0.15f, 0.15f, 0.15f };
-	*/
+
 	auto currPassCB = mCurrFrameResource->PassCB.get();
 	currPassCB->CopyData(0, mMainPassCB);
 }
@@ -497,8 +393,7 @@ void Game::BuildShadersAndInputLayout()
 	{
 		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 },
 		{ "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 12, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 },
-		//step3
-		//The texture coordinates determine what part of the texture gets mapped on the triangles.
+
 		{ "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 24, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 },
 	};
 }
@@ -594,7 +489,7 @@ void Game::BuildFrameResources()
 			1, (UINT)mAllRitems.size(), (UINT)mMaterials.size()));
 	}
 }
-//step13
+
 void Game::BuildMaterials()
 {
 	auto Eagle = std::make_unique<Material>();
@@ -655,14 +550,14 @@ void Game::DrawRenderItems(ID3D12GraphicsCommandList* cmdList, const std::vector
 		cmdList->IASetIndexBuffer(&ri->Geo->IndexBufferView());
 		cmdList->IASetPrimitiveTopology(ri->PrimitiveType);
 
-		//step18
+		
 		CD3DX12_GPU_DESCRIPTOR_HANDLE tex(mSrvDescriptorHeap->GetGPUDescriptorHandleForHeapStart());
 		tex.Offset(ri->Mat->DiffuseSrvHeapIndex, mCbvSrvDescriptorSize);
 
 		D3D12_GPU_VIRTUAL_ADDRESS objCBAddress = objectCB->GetGPUVirtualAddress() + ri->ObjCBIndex * objCBByteSize;
 		D3D12_GPU_VIRTUAL_ADDRESS matCBAddress = matCB->GetGPUVirtualAddress() + ri->Mat->MatCBIndex * matCBByteSize;
 
-		//step19
+		
 		cmdList->SetGraphicsRootDescriptorTable(0, tex);
 		cmdList->SetGraphicsRootConstantBufferView(1, objCBAddress);
 		cmdList->SetGraphicsRootConstantBufferView(3, matCBAddress);
@@ -671,7 +566,7 @@ void Game::DrawRenderItems(ID3D12GraphicsCommandList* cmdList, const std::vector
 	}
 }
 
-//step21
+
 std::array<const CD3DX12_STATIC_SAMPLER_DESC, 6> Game::GetStaticSamplers()
 {
 	// Applications usually only need a handful of samplers.  So just define them all up front

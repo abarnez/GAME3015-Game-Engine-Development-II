@@ -1,7 +1,7 @@
 #pragma once
 #include "SceneNode.h"
 #include "Aircraft.h"
-#include "SpriteNode.h"
+#include "Background.h"
 
 class World
 {
@@ -33,8 +33,8 @@ private:
 	XMFLOAT2		    				mSpawnPosition;
 	float								mScrollSpeed;
 	Aircraft* mPlayerAircraft;
-	SpriteNode* mBackground;
-	SpriteNode* mBackground2;
+	bckGround* mBackground;
+	bckGround* mBackground2;
 	Aircraft* raptor;
 	Aircraft* raptor2;
 };

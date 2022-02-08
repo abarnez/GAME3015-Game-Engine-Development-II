@@ -1,11 +1,11 @@
 #pragma once
 #include "Entity.h"
 
-class SpriteNode :
+class bckGround :
 	public Entity
 {
 public:
-	SpriteNode(Game* game);
+	bckGround(Game* game);
 
 private:
 	virtual void		drawCurrent() const;
