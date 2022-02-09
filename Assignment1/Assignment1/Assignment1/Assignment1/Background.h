@@ -8,6 +8,7 @@ public:
 	bckGround(Game* game);
 
 private:
+	virtual void		updateCurrent(GameTimer& gt);
 	virtual void		drawCurrent() const;
 	virtual void		buildCurrent();
 };

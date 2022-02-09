@@ -14,16 +14,6 @@ World::World(Game* game)
 
 void World::update(const GameTimer& gt)
 {
-	XMFLOAT3 pos1 = mBackground->getWorldPosition();
-	XMFLOAT3 pos2 = mBackground2->getWorldPosition();
-	if (pos1.z < -17.5) {
-		mBackground->setPosition(0, 0, 18.5);
-
-	}
-	if (pos2.z < -17.5) {
-		mBackground2->setPosition(0, 0, 18.5);
-
-	}
 	mSceneGraph->update(gt);
 
 }
