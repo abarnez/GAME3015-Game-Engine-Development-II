@@ -9,15 +9,15 @@ var class_world =
     [ "buildScene", "class_world.html#ae7df49f5d488e5cd1254bf360966f410", null ],
     [ "draw", "class_world.html#ab51a17ccbb108616daacd0c34973dc8d", null ],
     [ "update", "class_world.html#a36c003f54e14e022a360551af5e7923e", null ],
+    [ "escort1", "class_world.html#a707710cc3a9d49979b059b494f8a9219", null ],
+    [ "escort2", "class_world.html#a59afa9e619a6753b6e812725a5bd8324", null ],
     [ "mBackground", "class_world.html#ab154132e4bd2307017faf35998177e81", null ],
     [ "mBackground2", "class_world.html#a6d2c54b0b936c12e9eaf34596190148b", null ],
     [ "mGame", "class_world.html#a625a8dbdd805000904fb376215ca4c0a", null ],
+    [ "mMoveSpeed", "class_world.html#aa0c3a103450974c84af8726647494e73", null ],
     [ "mPlayerAircraft", "class_world.html#a5e511d7599995d30084959c91d98e13d", null ],
     [ "mSceneGraph", "class_world.html#abf9d49d6f67de1caff82e111a4f29040", null ],
     [ "mSceneLayers", "class_world.html#a6edbba54ac354295d50128255c7a0e70", null ],
-    [ "mScrollSpeed", "class_world.html#a1c2d240ef6483547a5c2e5ded0e3a150", null ],
     [ "mSpawnPosition", "class_world.html#a8bde7886e9d66e6bda46921d97186f66", null ],
-    [ "mWorldBounds", "class_world.html#a3be772106be584dff01efa4a27fc13a7", null ],
-    [ "raptor", "class_world.html#a4e87f86104556bf3b1fc74cd9593cfec", null ],
-    [ "raptor2", "class_world.html#a2cbe714134ce88b4ae18bbe01e80a243", null ]
+    [ "mWorldBounds", "class_world.html#a3be772106be584dff01efa4a27fc13a7", null ]
 ];

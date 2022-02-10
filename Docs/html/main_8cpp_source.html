@@ -99,28 +99,27 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="main_8cpp.html#aabcda87589d774901aa87061b8fd0176">    3</a></span><span class="keywordtype">int</span> WINAPI <a class="code hl_function" href="main_8cpp.html#aabcda87589d774901aa87061b8fd0176">WinMain</a>(HINSTANCE hInstance, HINSTANCE prevInstance,</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    PSTR cmdLine, <span class="keywordtype">int</span> showCmd)</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// Enable run-time memory check for debug builds.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#if defined(DEBUG) | defined(_DEBUG)</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_class" href="class_game.html">Game</a> theApp(hInstance);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">if</span> (!theApp.<a class="code hl_function" href="class_game.html#a16354d232327f6c21319713bf6983674">Initialize</a>())</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">return</span> theApp.Run();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">catch</span> (DxException &amp; e)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        MessageBox(<span class="keyword">nullptr</span>, e.ToString().c_str(), L<span class="stringliteral">&quot;HR Failed&quot;</span>, MB_OK);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#if defined(DEBUG) | defined(_DEBUG)</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_class" href="class_game.html">Game</a> theApp(hInstance);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">if</span> (!theApp.<a class="code hl_function" href="class_game.html#a16354d232327f6c21319713bf6983674">Initialize</a>())</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> theApp.Run();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">catch</span> (DxException &amp; e)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        MessageBox(<span class="keyword">nullptr</span>, e.ToString().c_str(), L<span class="stringliteral">&quot;HR Failed&quot;</span>, MB_OK);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 <div class="ttc" id="a_game_8h_html"><div class="ttname"><a href="_game_8h.html">Game.h</a></div><div class="ttdoc">Some functions are absent of any code namely due to them being left over from other assignments but w...</div></div>
 <div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_8h_source.html#l00012">Game.h:13</a></div></div>
-<div class="ttc" id="aclass_game_html_a16354d232327f6c21319713bf6983674"><div class="ttname"><a href="class_game.html#a16354d232327f6c21319713bf6983674">Game::Initialize</a></div><div class="ttdeci">virtual bool Initialize() override</div><div class="ttdef"><b>Definition:</b> <a href="_game_8cpp_source.html#l00017">Game.cpp:17</a></div></div>
+<div class="ttc" id="aclass_game_html_a16354d232327f6c21319713bf6983674"><div class="ttname"><a href="class_game.html#a16354d232327f6c21319713bf6983674">Game::Initialize</a></div><div class="ttdeci">virtual bool Initialize() override</div><div class="ttdef"><b>Definition:</b> <a href="_game_8cpp_source.html#l00015">Game.cpp:15</a></div></div>
 <div class="ttc" id="amain_8cpp_html_aabcda87589d774901aa87061b8fd0176"><div class="ttname"><a href="main_8cpp.html#aabcda87589d774901aa87061b8fd0176">WinMain</a></div><div class="ttdeci">int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, PSTR cmdLine, int showCmd)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00003">main.cpp:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
