@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['objcbindex_0',['ObjCBIndex',['../class_render_item.html#a4a4015284acd79469b70c358b6c1c2a1',1,'RenderItem']]],
-  ['objectcb_1',['ObjectCB',['../struct_frame_resource.html#adec81cdfb788278fac8ad38066e6c18f',1,'FrameResource']]],
-  ['objectconstants_2',['ObjectConstants',['../struct_object_constants.html',1,'']]],
-  ['onkeyboardinput_3',['OnKeyboardInput',['../class_game.html#a97cb6124867ae61c31a23dfc22de3c6a',1,'Game']]],
-  ['onmousedown_4',['OnMouseDown',['../class_d3_d_app.html#afa0d546d52408a9b55866e6ba065ddae',1,'D3DApp::OnMouseDown()'],['../class_game.html#a605e728835f29b7b320f6c9c8de05d00',1,'Game::OnMouseDown()']]],
-  ['onmousemove_5',['OnMouseMove',['../class_d3_d_app.html#aa5270048920cd8a62dc07c7ed5e97622',1,'D3DApp::OnMouseMove()'],['../class_game.html#ada0f3fffa1b4560465128b1eff7d1ef5',1,'Game::OnMouseMove()']]],
-  ['onmouseup_6',['OnMouseUp',['../class_d3_d_app.html#a98be07429ac3ffb5f76cbe831f9d94de',1,'D3DApp::OnMouseUp()'],['../class_game.html#a020e0c5f01a724bfef357bfe29f800c3',1,'Game::OnMouseUp()']]],
-  ['onresize_7',['OnResize',['../class_d3_d_app.html#a4c1b99cd01576c413d3a50d1435f1b8a',1,'D3DApp::OnResize()'],['../class_game.html#a7bd6d8d7aa09aa1196b4fa463d2ac41b',1,'Game::OnResize()']]],
-  ['opaque_8',['Opaque',['../_render_item_8h.html#aa63ede3e7371d4bc358f651428d23159afaa90538de35640e4b1e31ccf35b6eb5',1,'RenderItem.h']]],
-  ['operator_3d_9',['operator=',['../class_d3_d_app.html#a973e1436e4ba07338548073a49f8a253',1,'D3DApp::operator=()'],['../class_upload_buffer.html#a279ae8958cebcdb24f5e167a675ad9ce',1,'UploadBuffer::operator=()'],['../struct_frame_resource.html#a4d75d2a5a7bca5a0bd70a15b449c5776',1,'FrameResource::operator=()'],['../class_game.html#a9bda5763ea460634fef947be2530c8f5',1,'Game::operator=()']]]
+  ['raptor_0',['Raptor',['../class_aircraft.html#a7dae28542933e088032b753600046acdaf080b57c0c515dea65f056395cc6d59b',1,'Aircraft']]],
+  ['raptor_1',['raptor',['../class_world.html#a4e87f86104556bf3b1fc74cd9593cfec',1,'World']]],
+  ['raptor2_2',['raptor2',['../class_world.html#a2cbe714134ce88b4ae18bbe01e80a243',1,'World']]],
+  ['renderer_3',['renderer',['../class_scene_node.html#a51b22a4d6789039a96ebab097ed03db0',1,'SceneNode']]],
+  ['renderitem_4',['RenderItem',['../class_render_item.html',1,'RenderItem'],['../class_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()=default'],['../class_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()=default']]],
+  ['renderitem_2eh_5',['RenderItem.h',['../_render_item_8h.html',1,'']]],
+  ['renderlayer_6',['RenderLayer',['../_render_item_8h.html#aa63ede3e7371d4bc358f651428d23159',1,'RenderItem.h']]],
+  ['rendertargetsize_7',['RenderTargetSize',['../struct_pass_constants.html#aca6c8d20f6c92f8a117ef21bd7666687',1,'PassConstants']]]
 ];

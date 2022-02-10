@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['camera_0',['Camera',['../class_camera.html',1,'']]]
+  ['entity_0',['Entity',['../class_entity.html',1,'']]]
 ];

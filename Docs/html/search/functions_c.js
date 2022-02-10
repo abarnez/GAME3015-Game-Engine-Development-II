@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['rand_0',['Rand',['../class_math_helper.html#ab957edc5bcaf8d4966a1fde0e7c5fe38',1,'MathHelper']]],
-  ['randf_1',['RandF',['../class_math_helper.html#ad50130c776aee103e24d7170adcd13a3',1,'MathHelper::RandF()'],['../class_math_helper.html#a5b45a90302f9791a4961d943d473d6bb',1,'MathHelper::RandF(float a, float b)']]],
-  ['randhemisphereunitvec3_2',['RandHemisphereUnitVec3',['../class_math_helper.html#a1b8d2df0e81ec45673de09642351119d',1,'MathHelper']]],
-  ['randunitvec3_3',['RandUnitVec3',['../class_math_helper.html#ad28ffa12ec507b33bd45dd3a842173a6',1,'MathHelper']]],
-  ['renderitem_4',['RenderItem',['../class_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()=default'],['../class_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()=default']]],
-  ['reset_5',['Reset',['../class_game_timer.html#af67b252c869cc649971b8cceefcb1eb8',1,'GameTimer']]],
-  ['resource_6',['Resource',['../class_upload_buffer.html#a54b62594f77aed67c502512053addf1f',1,'UploadBuffer']]],
-  ['roll_7',['Roll',['../class_camera.html#a9dc807ac3d65ffe6ad50ffa555a5b904',1,'Camera']]],
-  ['rotatey_8',['RotateY',['../class_camera.html#a3444462b0aac89dd9d3fa1619efe171c',1,'Camera']]],
-  ['run_9',['Run',['../class_d3_d_app.html#a0a2ed8f09bb1ae3a97f3b9a5067c905f',1,'D3DApp']]]
+  ['update_0',['Update',['../class_game.html#ab9244991993b5a1cbde3f1f2d73f2745',1,'Game']]],
+  ['update_1',['update',['../class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08',1,'SceneNode::update()'],['../class_world.html#a36c003f54e14e022a360551af5e7923e',1,'World::update()']]],
+  ['updatecamera_2',['UpdateCamera',['../class_game.html#a077400cce3bd3e41333b8228b386e450',1,'Game']]],
+  ['updatechildren_3',['updateChildren',['../class_entity.html#a2480219b09ff913bc2b0d035ce21b9e4',1,'Entity::updateChildren()'],['../class_scene_node.html#abffcfe9a66a65d5fe0d6f25c89e8e1a0',1,'SceneNode::updateChildren()']]],
+  ['updatecurrent_4',['updateCurrent',['../class_aircraft.html#aca42bd5bcaeac91ae9356a0c211dc1a2',1,'Aircraft::updateCurrent()'],['../classbck_ground.html#addcede5719441db504fce136c28f1708',1,'bckGround::updateCurrent()'],['../class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94',1,'Entity::updateCurrent()'],['../class_scene_node.html#a49981a42b39c510d272aa5db19f7b4ec',1,'SceneNode::updateCurrent()']]],
+  ['updatemainpasscb_5',['UpdateMainPassCB',['../class_game.html#aa3bb0452e306c88eadfb2d4eedf5ad25',1,'Game']]],
+  ['updatematerialcbs_6',['UpdateMaterialCBs',['../class_game.html#a4b7fd5dda779a7dd834dd7d26566b657',1,'Game']]],
+  ['updateobjectcbs_7',['UpdateObjectCBs',['../class_game.html#a1bdfe76a8bfdff007837cb2d2c3c59d6',1,'Game']]]
 ];

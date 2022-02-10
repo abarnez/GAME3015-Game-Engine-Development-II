@@ -49,18 +49,10 @@ struct RenderItem
 
 class Game;
 
-/**
- * @file doxygen_c.h
- * @author My Self
- * @date 9 Sep 2012
- * @brief File containing example of doxygen usage for quick reference.
- *
- * Here typically goes a more extensive explanation of what the header
- * defines. Doxygens tags are words preceeded by either a backslash @\
- * or by an at symbol @@.
- * @see http://www.stack.nl/~dimitri/doxygen/docblocks.html
- * @see http://www.stack.nl/~dimitri/doxygen/commands.html
- */
+
+/// This is the brief description for this class
+/// 
+/// This is the *detailed* description. More **stuff** here
 
 class SceneNode
 {
@@ -69,6 +61,15 @@ public:
 
 
 public:
+	/// This is a brief description
+	/// 
+	/// This is a detailed function description
+	/// @param game This parameter does this
+	/// @returns Nothing important
+	/// @see update()
+	/// @note A little side note
+	/// @attention more important than a note
+	/// @warning A warning is super important
 	SceneNode(Game* game);
 
 	void					attachChild(Ptr child);

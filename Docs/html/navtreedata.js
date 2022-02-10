@@ -25,13 +25,11 @@
 var NAVTREE =
 [
   [ "Game Engine Development II Assignment 1", "index.html", [
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+    [ "Game Engine Development II Documentations", "index.html", null ],
+    [ "Subsystem1 Title", "subsystem1.html", [
+      [ "Section 1", "subsystem1.html#subystem1section1", null ],
+      [ "Section 2", "subsystem1.html#subsystem1section2", [
+        [ "Sub section 1", "subsystem1.html#subsystem1subsection1", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -39,9 +37,9 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
@@ -53,9 +51,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]
   ] ]
@@ -63,9 +59,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_aircraft_8cpp.html",
-"class_game.html#a3f6f10460db9b4b5561656d6be357f4f",
-"namespacemembers_eval.html"
+"_aircraft_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Game Engine Development II Assignment 1
+   <div id="projectname">Game Engine Development II Assignment 1<span id="projectnumber">&#160;Assignment 1</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('_frame_resource_8cpp_source.html','');
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="struct_frame_resource.html#abee2ad23c6f03da417e2bcb102312ba8">    3</a></span><a class="code hl_function" href="struct_frame_resource.html#abee2ad23c6f03da417e2bcb102312ba8">FrameResource::FrameResource</a>(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount, UINT waveVertCount)</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_define" href="d3d_util_8h.html#af3892d76181a8a44edbd1a71a6ae9b97">ThrowIfFailed</a>(device-&gt;CreateCommandAllocator(</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    ThrowIfFailed(device-&gt;CreateCommandAllocator(</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        D3D12_COMMAND_LIST_TYPE_DIRECT,</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        IID_PPV_ARGS(<a class="code hl_variable" href="struct_frame_resource.html#a2c0624d447e7fe7697b37a91275066d1">CmdListAlloc</a>.GetAddressOf())));</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_frame_resource_8cpp_source.html','');
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_frame_resource.html#a496fdce5ab50522a3dcbf9260be6e86c">   17</a></span><a class="code hl_function" href="struct_frame_resource.html#abee2ad23c6f03da417e2bcb102312ba8">FrameResource::FrameResource</a>(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_define" href="d3d_util_8h.html#af3892d76181a8a44edbd1a71a6ae9b97">ThrowIfFailed</a>(device-&gt;CreateCommandAllocator(</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ThrowIfFailed(device-&gt;CreateCommandAllocator(</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        D3D12_COMMAND_LIST_TYPE_DIRECT,</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        IID_PPV_ARGS(<a class="code hl_variable" href="struct_frame_resource.html#a2c0624d447e7fe7697b37a91275066d1">CmdListAlloc</a>.GetAddressOf())));</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
@@ -128,7 +128,6 @@ $(document).ready(function(){initNavTree('_frame_resource_8cpp_source.html','');
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 <div class="ttc" id="a_frame_resource_8h_html"><div class="ttname"><a href="_frame_resource_8h.html">FrameResource.h</a></div></div>
-<div class="ttc" id="ad3d_util_8h_html_af3892d76181a8a44edbd1a71a6ae9b97"><div class="ttname"><a href="d3d_util_8h.html#af3892d76181a8a44edbd1a71a6ae9b97">ThrowIfFailed</a></div><div class="ttdeci">#define ThrowIfFailed(x)</div><div class="ttdef"><b>Definition:</b> <a href="d3d_util_8h_source.html#l00273">d3dUtil.h:273</a></div></div>
 <div class="ttc" id="astruct_frame_resource_html_a2a301e2320545cc025551247f9f60df5"><div class="ttname"><a href="struct_frame_resource.html#a2a301e2320545cc025551247f9f60df5">FrameResource::PassCB</a></div><div class="ttdeci">std::unique_ptr&lt; UploadBuffer&lt; PassConstants &gt; &gt; PassCB</div><div class="ttdef"><b>Definition:</b> <a href="_frame_resource_8h_source.html#l00070">FrameResource.h:70</a></div></div>
 <div class="ttc" id="astruct_frame_resource_html_a2c0624d447e7fe7697b37a91275066d1"><div class="ttname"><a href="struct_frame_resource.html#a2c0624d447e7fe7697b37a91275066d1">FrameResource::CmdListAlloc</a></div><div class="ttdeci">Microsoft::WRL::ComPtr&lt; ID3D12CommandAllocator &gt; CmdListAlloc</div><div class="ttdef"><b>Definition:</b> <a href="_frame_resource_8h_source.html#l00065">FrameResource.h:65</a></div></div>
 <div class="ttc" id="astruct_frame_resource_html_a502a3bd044ed30d31280f4382cc07570"><div class="ttname"><a href="struct_frame_resource.html#a502a3bd044ed30d31280f4382cc07570">FrameResource::MaterialCB</a></div><div class="ttdeci">std::unique_ptr&lt; UploadBuffer&lt; MaterialConstants &gt; &gt; MaterialCB</div><div class="ttdef"><b>Definition:</b> <a href="_frame_resource_8h_source.html#l00071">FrameResource.h:71</a></div></div>

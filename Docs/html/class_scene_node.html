@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Game Engine Development II Assignment 1
+   <div id="projectname">Game Engine Development II Assignment 1<span id="projectnumber">&#160;Assignment 1</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -101,6 +101,9 @@ $(document).ready(function(){initNavTree('class_scene_node.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>This is the brief description for this class.  
+ <a href="class_scene_node.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SceneNode:</div>
@@ -122,12 +125,13 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af1f3bf5e98c8b2c90b36057df2577d1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a">SceneNode</a> (<a class="el" href="class_game.html">Game</a> *<a class="el" href="class_scene_node.html#a06d1261ef839789469f228e7a7f2bfb9">game</a>)</td></tr>
+<tr class="memdesc:af1f3bf5e98c8b2c90b36057df2577d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a brief description.  <a href="class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a">More...</a><br /></td></tr>
 <tr class="separator:af1f3bf5e98c8b2c90b36057df2577d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdfa2c2ba28bce076c886eaba2d9e650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#acdfa2c2ba28bce076c886eaba2d9e650">attachChild</a> (<a class="el" href="class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a">Ptr</a> child)</td></tr>
 <tr class="separator:acdfa2c2ba28bce076c886eaba2d9e650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9681eb3db7d9e575945b57e275e040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a3b9681eb3db7d9e575945b57e275e040">detachChild</a> (const <a class="el" href="class_scene_node.html">SceneNode</a> &amp;node)</td></tr>
 <tr class="separator:a3b9681eb3db7d9e575945b57e275e040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858b7a088c0a2d01aaa90baf05d58d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08">update</a> (const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;gt)</td></tr>
+<tr class="memitem:a858b7a088c0a2d01aaa90baf05d58d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08">update</a> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:a858b7a088c0a2d01aaa90baf05d58d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b1a847182e49103bc145bd4604e056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a41b1a847182e49103bc145bd4604e056">draw</a> () const</td></tr>
 <tr class="separator:a41b1a847182e49103bc145bd4604e056"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +158,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a49981a42b39c510d272aa5db19f7b4ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a49981a42b39c510d272aa5db19f7b4ec">updateCurrent</a> (const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;gt)</td></tr>
+<tr class="memitem:a49981a42b39c510d272aa5db19f7b4ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a49981a42b39c510d272aa5db19f7b4ec">updateCurrent</a> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:a49981a42b39c510d272aa5db19f7b4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abffcfe9a66a65d5fe0d6f25c89e8e1a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#abffcfe9a66a65d5fe0d6f25c89e8e1a0">updateChildren</a> (const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;gt)</td></tr>
+<tr class="memitem:abffcfe9a66a65d5fe0d6f25c89e8e1a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#abffcfe9a66a65d5fe0d6f25c89e8e1a0">updateChildren</a> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:abffcfe9a66a65d5fe0d6f25c89e8e1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7d32b925dde5ed087f112774a044b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a0d7d32b925dde5ed087f112774a044b8">drawCurrent</a> () const</td></tr>
 <tr class="separator:a0d7d32b925dde5ed087f112774a044b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,8 +189,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa478ebb376c411801a004bcc2590046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00065">65</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<div class="textblock"><p >This is the brief description for this class. </p>
+<p >This is the <em>detailed</em> description. More <b>stuff</b> here </p>
+
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00057">57</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaf5c9ad8475874b51b70e400822f2e9a" name="aaf5c9ad8475874b51b70e400822f2e9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf5c9ad8475874b51b70e400822f2e9a">&#9670;&nbsp;</a></span>Ptr</h2>
@@ -200,7 +206,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00068">68</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00060">60</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -220,6 +226,19 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This is a brief description. </p>
+<p >This is a detailed function description </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>This parameter does this </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Nothing important </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08">update()</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>A little side note </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>more important than a note </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>A warning is super important </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_scene_node_8cpp_source.html#l00004">4</a> of file <a class="el" href="_scene_node_8cpp_source.html">SceneNode.cpp</a>.</p>
 
@@ -664,7 +683,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SceneNode::update </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;&#160;</td>
+          <td class="paramtype">const GameTimer &amp;&#160;</td>
           <td class="paramname"><em>gt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -687,7 +706,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SceneNode::updateChildren </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;&#160;</td>
+          <td class="paramtype">const GameTimer &amp;&#160;</td>
           <td class="paramname"><em>gt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -717,7 +736,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SceneNode::updateCurrent </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_game_timer.html">GameTimer</a> &amp;&#160;</td>
+          <td class="paramtype">const GameTimer &amp;&#160;</td>
           <td class="paramname"><em>gt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -756,7 +775,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00102">102</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00103">103</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -780,7 +799,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00108">108</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00109">109</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +823,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00109">109</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00110">110</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +847,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00105">105</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00106">106</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +871,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00106">106</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00107">107</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +895,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00107">107</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00108">108</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
@@ -900,14 +919,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00103">103</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_node_8h_source.html#l00104">104</a> of file <a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Assignment1/Assignment1/<a class="el" href="_scene_node_8h_source.html">SceneNode.h</a></li>
-<li>Assignment1/Assignment1/<a class="el" href="_scene_node_8cpp_source.html">SceneNode.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

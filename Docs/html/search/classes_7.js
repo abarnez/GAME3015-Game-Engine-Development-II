@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['light_0',['Light',['../struct_light.html',1,'']]]
+  ['renderitem_0',['RenderItem',['../class_render_item.html',1,'']]]
 ];
