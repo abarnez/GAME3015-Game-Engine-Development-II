@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize_0',['Initialize',['../class_game.html#a16354d232327f6c21319713bf6983674',1,'Game']]]
+  ['loadtextures_0',['LoadTextures',['../class_game.html#ad23eba18656a646756a98bcda25a98a4',1,'Game']]]
 ];

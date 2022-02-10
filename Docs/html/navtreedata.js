@@ -26,12 +26,6 @@ var NAVTREE =
 [
   [ "Game Engine Development II Assignment 1", "index.html", [
     [ "Game Engine Development II Documentations", "index.html", null ],
-    [ "Subsystem1 Title", "subsystem1.html", [
-      [ "Section 1", "subsystem1.html#subystem1section1", null ],
-      [ "Section 2", "subsystem1.html#subsystem1section2", [
-        [ "Sub section 1", "subsystem1.html#subsystem1subsection1", null ]
-      ] ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -50,8 +44,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ]
+        [ "Variables", "globals_vars.html", null ]
       ] ]
     ] ]
   ] ]

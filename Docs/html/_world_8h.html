@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('_world_8h.html',''); initResizable(); 
   <div class="headertitle"><div class="title">World.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The world acts like a unity scene the way I understand it, based on the sfml version in week3-demo7 I based the structure on that as closely as possible. We have our game world which takes place in the window, our update (similar to unity update or ue4 tick), draw gets called on the scene node to draw current and children Build Scene creates our scene and instantiates our player, escorts, and the background. Similar to how we used the build render items in other projects. We have a layer enumerator to differentiate the different layers.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_scene_node_8h_source.html">SceneNode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_aircraft_8h_source.html">Aircraft.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_background_8h_source.html">Background.h</a>&quot;</code><br />
@@ -107,7 +110,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html">World</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The world acts like a unity scene the way I understand it, based on the sfml version in week3-demo7 I based the structure on that as closely as possible. We have our game world which takes place in the window, our update (similar to unity update or ue4 tick), draw gets called on the scene node to draw current and children Build Scene creates our scene and instantiates our player, escorts, and the background. Similar to how we used the build render items in other projects. We have a layer enumerator to differentiate the different layers. </p>
+<dl class="section author"><dt>Author</dt><dd>Alexander Barnes </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2/9/2022 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="_world_8h_source.html">World.h</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

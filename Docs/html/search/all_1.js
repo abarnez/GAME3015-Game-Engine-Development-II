@@ -3,7 +3,7 @@ var searchData=
   ['background_0',['Background',['../class_world.html#a7580b1f38bb9018be3eeef74462b4b2fa978d5e24a046c655c1a7d684c19bdcf0',1,'World']]],
   ['background_2ecpp_1',['Background.cpp',['../_background_8cpp.html',1,'']]],
   ['background_2eh_2',['Background.h',['../_background_8h.html',1,'']]],
-  ['basevertexlocation_3',['BaseVertexLocation',['../class_render_item.html#a3750ef7b2791ea922df46e222649f3dc',1,'RenderItem']]],
+  ['basevertexlocation_3',['BaseVertexLocation',['../struct_render_item.html#a3750ef7b2791ea922df46e222649f3dc',1,'RenderItem']]],
   ['bckground_4',['bckGround',['../classbck_ground.html',1,'bckGround'],['../classbck_ground.html#a70384c47bafa5ea88d3b90987616c9e7',1,'bckGround::bckGround()']]],
   ['build_5',['build',['../class_scene_node.html#a67ca883a91d8c45004a0786330548d8f',1,'SceneNode']]],
   ['buildchildren_6',['buildChildren',['../class_scene_node.html#aeb2a680b5c91f33af2b53e098645c711',1,'SceneNode']]],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['frameresource_2ecpp_0',['FrameResource.cpp',['../_frame_resource_8cpp.html',1,'']]],
-  ['frameresource_2eh_1',['FrameResource.h',['../_frame_resource_8h.html',1,'']]]
+  ['game_2ecpp_0',['Game.cpp',['../_game_8cpp.html',1,'']]],
+  ['game_2eh_1',['Game.h',['../_game_8h.html',1,'']]]
 ];

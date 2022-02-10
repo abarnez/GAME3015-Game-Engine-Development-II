@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['objcbindex_0',['ObjCBIndex',['../class_render_item.html#a4a4015284acd79469b70c358b6c1c2a1',1,'RenderItem']]],
-  ['objectcb_1',['ObjectCB',['../struct_frame_resource.html#adec81cdfb788278fac8ad38066e6c18f',1,'FrameResource']]],
-  ['objectconstants_2',['ObjectConstants',['../struct_object_constants.html',1,'']]],
-  ['onkeyboardinput_3',['OnKeyboardInput',['../class_game.html#a97cb6124867ae61c31a23dfc22de3c6a',1,'Game']]],
-  ['onmousedown_4',['OnMouseDown',['../class_game.html#a605e728835f29b7b320f6c9c8de05d00',1,'Game']]],
-  ['onmousemove_5',['OnMouseMove',['../class_game.html#ada0f3fffa1b4560465128b1eff7d1ef5',1,'Game']]],
-  ['onmouseup_6',['OnMouseUp',['../class_game.html#a020e0c5f01a724bfef357bfe29f800c3',1,'Game']]],
-  ['onresize_7',['OnResize',['../class_game.html#a7bd6d8d7aa09aa1196b4fa463d2ac41b',1,'Game']]],
-  ['opaque_8',['Opaque',['../_render_item_8h.html#aa63ede3e7371d4bc358f651428d23159afaa90538de35640e4b1e31ccf35b6eb5',1,'RenderItem.h']]],
-  ['operator_3d_9',['operator=',['../struct_frame_resource.html#a4d75d2a5a7bca5a0bd70a15b449c5776',1,'FrameResource::operator=()'],['../class_game.html#a9bda5763ea460634fef947be2530c8f5',1,'Game::operator=()']]]
+  ['raptor_0',['raptor',['../class_world.html#a4e87f86104556bf3b1fc74cd9593cfec',1,'World']]],
+  ['raptor_1',['Raptor',['../class_aircraft.html#a7dae28542933e088032b753600046acdaf080b57c0c515dea65f056395cc6d59b',1,'Aircraft']]],
+  ['raptor2_2',['raptor2',['../class_world.html#a2cbe714134ce88b4ae18bbe01e80a243',1,'World']]],
+  ['renderer_3',['renderer',['../class_scene_node.html#a51b22a4d6789039a96ebab097ed03db0',1,'SceneNode']]],
+  ['renderitem_4',['RenderItem',['../struct_render_item.html',1,'RenderItem'],['../struct_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem::RenderItem()']]]
 ];

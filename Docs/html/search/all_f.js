@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['texc_0',['TexC',['../struct_vertex.html#a43e8c374e56c6ed3acc708ba2de1c70c',1,'Vertex']]],
-  ['textransform_1',['TexTransform',['../struct_object_constants.html#a0a7f8e4817a18595707569b307060a42',1,'ObjectConstants::TexTransform()'],['../class_render_item.html#ac6799548474209d172cbb3d337f56074',1,'RenderItem::TexTransform()']]],
-  ['totaltime_2',['TotalTime',['../struct_pass_constants.html#a8b7dc8578d216518bff83264bc85d34c',1,'PassConstants']]],
-  ['transparent_3',['Transparent',['../_render_item_8h.html#aa63ede3e7371d4bc358f651428d23159a3d971943089a3388c01fb297a32d9ba7',1,'RenderItem.h']]],
-  ['type_4',['Type',['../class_aircraft.html#a7dae28542933e088032b753600046acd',1,'Aircraft']]]
+  ['winmain_0',['WinMain',['../main_8cpp.html#aabcda87589d774901aa87061b8fd0176',1,'main.cpp']]],
+  ['world_1',['World',['../class_world.html',1,'World'],['../struct_render_item.html#a2e0a651d0ad4ba7975455e22fbde1a28',1,'RenderItem::World()'],['../class_world.html#a712eb4a5b0d12588dd61d10c91b83366',1,'World::World()']]],
+  ['world_2ecpp_2',['World.cpp',['../_world_8cpp.html',1,'']]],
+  ['world_2eh_3',['World.h',['../_world_8h.html',1,'']]]
 ];

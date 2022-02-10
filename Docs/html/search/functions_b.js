@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['scenenode_0',['SceneNode',['../class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a',1,'SceneNode']]],
-  ['setposition_1',['setPosition',['../class_scene_node.html#a45f8882749060b059fe26eb02f7f843b',1,'SceneNode']]],
-  ['setscale_2',['setScale',['../class_scene_node.html#a753cea60b8a939a82a47258f4a51df82',1,'SceneNode']]],
-  ['setvelocity_3',['setVelocity',['../class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78',1,'Entity::setVelocity(XMFLOAT3 velocity)'],['../class_entity.html#abb3c22fe7e78968131560642e360e12b',1,'Entity::setVelocity(float vx, float vy, float vz)']]],
-  ['setworldrotation_4',['setWorldRotation',['../class_scene_node.html#a66fa14e7553900ae540f13e4dc5f749b',1,'SceneNode']]],
-  ['strafe_5',['Strafe',['../class_aircraft.html#a6bb7b0a44e20698d535d52dafd3d09c0',1,'Aircraft']]]
+  ['update_0',['Update',['../class_game.html#ab9244991993b5a1cbde3f1f2d73f2745',1,'Game']]],
+  ['update_1',['update',['../class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08',1,'SceneNode::update()'],['../class_world.html#a36c003f54e14e022a360551af5e7923e',1,'World::update()']]],
+  ['updatecamera_2',['UpdateCamera',['../class_game.html#a077400cce3bd3e41333b8228b386e450',1,'Game']]],
+  ['updatechildren_3',['updateChildren',['../class_entity.html#a2480219b09ff913bc2b0d035ce21b9e4',1,'Entity::updateChildren()'],['../class_scene_node.html#abffcfe9a66a65d5fe0d6f25c89e8e1a0',1,'SceneNode::updateChildren()']]],
+  ['updatecurrent_4',['updateCurrent',['../class_aircraft.html#aca42bd5bcaeac91ae9356a0c211dc1a2',1,'Aircraft::updateCurrent()'],['../classbck_ground.html#addcede5719441db504fce136c28f1708',1,'bckGround::updateCurrent()'],['../class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94',1,'Entity::updateCurrent()'],['../class_scene_node.html#a49981a42b39c510d272aa5db19f7b4ec',1,'SceneNode::updateCurrent()']]],
+  ['updatemainpasscb_5',['UpdateMainPassCB',['../class_game.html#aa3bb0452e306c88eadfb2d4eedf5ad25',1,'Game']]],
+  ['updatematerialcbs_6',['UpdateMaterialCBs',['../class_game.html#a4b7fd5dda779a7dd834dd7d26566b657',1,'Game']]],
+  ['updateobjectcbs_7',['UpdateObjectCBs',['../class_game.html#a1bdfe76a8bfdff007837cb2d2c3c59d6',1,'Game']]]
 ];

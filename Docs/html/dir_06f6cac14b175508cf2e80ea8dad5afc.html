@@ -100,34 +100,36 @@ Files</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aircraft_8cpp.html">Aircraft.cpp</a> <a href="_aircraft_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aircraft_8h.html">Aircraft.h</a> <a href="_aircraft_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_aircraft_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This script is derived from the <a class="el" href="class_entity.html">Entity</a> class. It overrides the updateCurrent(), drawCurrent(), and buildCurrent() to implement custom appearance and behaviour from a generic entity instance.<br  />
+For this custom behaviour, the updateCurrent() moves the plane from side to side on the screen. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_background_8cpp.html">Background.cpp</a> <a href="_background_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_background_8h.html">Background.h</a> <a href="_background_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_background_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background is based on the SpriteNode from the week3demo7 and is used primairly for our background sprite. Build current builds the render item and sets up the geomerty. Draw current gets our transform in the world and counts dirty frames Update current can be used to update it with things like movement. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_entity_8cpp.html">Entity.cpp</a> <a href="_entity_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_entity_8h.html">Entity.h</a> <a href="_entity_8h_source.html">[code]</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_frame_resource_8cpp.html">FrameResource.cpp</a> <a href="_frame_resource_8cpp_source.html">[code]</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_frame_resource_8h.html">FrameResource.h</a> <a href="_frame_resource_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_entity_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This script is derived from the <a class="el" href="class_scene_node.html">SceneNode</a> class. It overrides the updateCurrent() and updateChildren() to implement a generic <a class="el" href="class_entity.html">Entity</a> behaviour.<br  />
+The entity has a velocity variable to hold the velocity of any entity instance, as well as setter/getter functions for changing the entity object's velocity. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8cpp.html">Game.cpp</a> <a href="_game_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_8h.html">Game.h</a> <a href="_game_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_game_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some functions are absent of any code namely due to them being left over from other assignments but will be repurposed later on in the course. Mostly the functions to due with handling player input. OnResize, Update, Draw, UpdateObjectCBs, UpdateMaterialCBs, UpdateMainPassCBs, LoadTextures BuildRootSignature..etc are functions reused from code from a previous class repurposed and adapted for uses in this class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html">main.cpp</a> <a href="main_8cpp_source.html">[code]</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_render_item_8h.html">RenderItem.h</a> <a href="_render_item_8h_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scene_node_8cpp.html">SceneNode.cpp</a> <a href="_scene_node_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scene_node_8h.html">SceneNode.h</a> <a href="_scene_node_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_scene_node_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This script is the blueprint for creating a generic <a class="el" href="class_scene_node.html">SceneNode</a> in the <a class="el" href="class_world.html">World</a>. Everything that exists in the world exists as a scene node. It contains variables for holding the transform of the scene node object, as well as variables for holding the reference to its children and it's parent scene node. Objects are placed into the <a class="el" href="class_world.html">World</a> in a tree like structure, starting from a base scene node. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_world_8cpp.html">World.cpp</a> <a href="_world_8cpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_world_8h.html">World.h</a> <a href="_world_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:_world_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The world acts like a unity scene the way I understand it, based on the sfml version in week3-demo7 I based the structure on that as closely as possible. We have our game world which takes place in the window, our update (similar to unity update or ue4 tick), draw gets called on the scene node to draw current and children Build Scene creates our scene and instantiates our player, escorts, and the background. Similar to how we used the build render items in other projects. We have a layer enumerator to differentiate the different layers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

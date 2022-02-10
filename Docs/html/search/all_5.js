@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['farz_0',['FarZ',['../struct_pass_constants.html#acff44014fa749b6cc636c0ed3516bab7',1,'PassConstants']]],
-  ['fence_1',['Fence',['../struct_frame_resource.html#aa90bdd44edbdbebf156b7cdb01437b8a',1,'FrameResource']]],
-  ['fogcolor_2',['FogColor',['../struct_pass_constants.html#ae11238594ce3968e848ce2ad8cf9fd03',1,'PassConstants']]],
-  ['frameresource_3',['FrameResource',['../struct_frame_resource.html',1,'FrameResource'],['../struct_frame_resource.html#abee2ad23c6f03da417e2bcb102312ba8',1,'FrameResource::FrameResource(ID3D12Device *device, UINT passCount, UINT objectCount, UINT materialCount, UINT waveVertCount)'],['../struct_frame_resource.html#a496fdce5ab50522a3dcbf9260be6e86c',1,'FrameResource::FrameResource(ID3D12Device *device, UINT passCount, UINT objectCount, UINT materialCount)'],['../struct_frame_resource.html#a847d99ad6c492fd988ab52623e56aed5',1,'FrameResource::FrameResource(const FrameResource &amp;rhs)=delete']]],
-  ['frameresource_2ecpp_4',['FrameResource.cpp',['../_frame_resource_8cpp.html',1,'']]],
-  ['frameresource_2eh_5',['FrameResource.h',['../_frame_resource_8h.html',1,'']]]
+  ['indexcount_0',['IndexCount',['../struct_render_item.html#ad95fafa012c0d99c216b998f11207e38',1,'RenderItem']]],
+  ['initialize_1',['Initialize',['../class_game.html#a16354d232327f6c21319713bf6983674',1,'Game']]]
 ];

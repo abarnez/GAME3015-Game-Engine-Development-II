@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['passcb_0',['PassCB',['../struct_frame_resource.html#a2a301e2320545cc025551247f9f60df5',1,'FrameResource']]],
-  ['passconstants_1',['PassConstants',['../struct_pass_constants.html',1,'']]],
-  ['pos_2',['Pos',['../struct_vertex.html#af07583772f2c7eee146e655826467dcb',1,'Vertex']]],
-  ['primitivetype_3',['PrimitiveType',['../class_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]],
-  ['proj_4',['Proj',['../struct_pass_constants.html#a8af99b882f26e3507717dacc0c957521',1,'PassConstants']]],
-  ['ptr_5',['Ptr',['../class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a',1,'SceneNode']]]
+  ['scenenode_0',['SceneNode',['../class_scene_node.html',1,'SceneNode'],['../class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a',1,'SceneNode::SceneNode()']]],
+  ['scenenode_2ecpp_1',['SceneNode.cpp',['../_scene_node_8cpp.html',1,'']]],
+  ['scenenode_2eh_2',['SceneNode.h',['../_scene_node_8h.html',1,'']]],
+  ['setposition_3',['setPosition',['../class_scene_node.html#a45f8882749060b059fe26eb02f7f843b',1,'SceneNode']]],
+  ['setscale_4',['setScale',['../class_scene_node.html#a753cea60b8a939a82a47258f4a51df82',1,'SceneNode']]],
+  ['setvelocity_5',['setVelocity',['../class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78',1,'Entity::setVelocity(XMFLOAT3 velocity)'],['../class_entity.html#abb3c22fe7e78968131560642e360e12b',1,'Entity::setVelocity(float vx, float vy, float vz)']]],
+  ['setworldrotation_6',['setWorldRotation',['../class_scene_node.html#a66fa14e7553900ae540f13e4dc5f749b',1,'SceneNode']]],
+  ['startindexlocation_7',['StartIndexLocation',['../struct_render_item.html#a979179c6dd354cd329563e3599245463',1,'RenderItem']]],
+  ['strafe_8',['Strafe',['../class_aircraft.html#a6bb7b0a44e20698d535d52dafd3d09c0',1,'Aircraft']]]
 ];

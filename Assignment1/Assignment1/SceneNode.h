@@ -50,9 +50,17 @@ struct RenderItem
 class Game;
 
 
-/// This is the brief description for this class
-/// 
-/// This is the *detailed* description. More **stuff** here
+/**
+ * @file SceneNode.h
+ * @author Abdulhakeem Idris
+ * @date 2/9/2022
+ * @brief
+ * This script is the blueprint for creating a generic SceneNode in the World. Everything that
+ * exists in the world exists as a scene node. It contains variables for holding the transform
+ * of the scene node object, as well as variables for holding the reference to its children and
+ * it's parent scene node. Objects are placed into the World in a tree like structure, starting 
+ * from a base scene node.
+ */
 
 class SceneNode
 {
@@ -61,15 +69,6 @@ public:
 
 
 public:
-	/// This is a brief description
-	/// 
-	/// This is a detailed function description
-	/// @param game This parameter does this
-	/// @returns Nothing important
-	/// @see update()
-	/// @note A little side note
-	/// @attention more important than a note
-	/// @warning A warning is super important
 	SceneNode(Game* game);
 
 	void					attachChild(Ptr child);

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nearz_0',['NearZ',['../struct_pass_constants.html#affe3124795eccdba77dae8cef5399e7d',1,'PassConstants']]],
-  ['normal_1',['Normal',['../struct_vertex.html#a553ed48ae98dda36da8e57cfa53877d4',1,'Vertex']]],
-  ['numframesdirty_2',['NumFramesDirty',['../class_render_item.html#aca6ae2de91638af530fd5ce91fea3306',1,'RenderItem']]]
+  ['primitivetype_0',['PrimitiveType',['../struct_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]],
+  ['ptr_1',['Ptr',['../class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a',1,'SceneNode']]]
 ];

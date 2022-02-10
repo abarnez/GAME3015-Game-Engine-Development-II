@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['indexcount_0',['IndexCount',['../class_render_item.html#ad95fafa012c0d99c216b998f11207e38',1,'RenderItem']]],
-  ['invproj_1',['InvProj',['../struct_pass_constants.html#a9a1ac0a0421d54bf40c9749ec1d1537c',1,'PassConstants']]],
-  ['invrendertargetsize_2',['InvRenderTargetSize',['../struct_pass_constants.html#af25015138bf3b92384560ec1eed1e6aa',1,'PassConstants']]],
-  ['invview_3',['InvView',['../struct_pass_constants.html#a4c0b015fa6bc9623ccfa4be6a16a4da9',1,'PassConstants']]],
-  ['invviewproj_4',['InvViewProj',['../struct_pass_constants.html#a54f008edf338ad532633c2bb797fca88',1,'PassConstants']]]
+  ['raptor_0',['raptor',['../class_world.html#a4e87f86104556bf3b1fc74cd9593cfec',1,'World']]],
+  ['raptor2_1',['raptor2',['../class_world.html#a2cbe714134ce88b4ae18bbe01e80a243',1,'World']]],
+  ['renderer_2',['renderer',['../class_scene_node.html#a51b22a4d6789039a96ebab097ed03db0',1,'SceneNode']]]
 ];

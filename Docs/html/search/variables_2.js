@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['cbperobjectpad1_0',['cbPerObjectPad1',['../struct_pass_constants.html#aaae2d67cebf30e767a800a1e508e249a',1,'PassConstants']]],
-  ['cbperobjectpad2_1',['cbPerObjectPad2',['../struct_pass_constants.html#a617fb5be6baaf150a132c9ea0396abfa',1,'PassConstants']]],
-  ['cmdlistalloc_2',['CmdListAlloc',['../struct_frame_resource.html#a2c0624d447e7fe7697b37a91275066d1',1,'FrameResource']]]
+  ['indexcount_0',['IndexCount',['../struct_render_item.html#ad95fafa012c0d99c216b998f11207e38',1,'RenderItem']]]
 ];

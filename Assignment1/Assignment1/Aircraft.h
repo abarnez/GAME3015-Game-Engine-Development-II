@@ -1,3 +1,12 @@
+/**
+ * @file Aircraft.h
+ * @author Abdulhakeem Idris
+ * @date 2/9/2022
+ * @brief
+ * This script is derived from the Entity class. It overrides the updateCurrent(), drawCurrent(), and buildCurrent()
+ * to implement custom appearance and behaviour from a generic entity instance.\n
+ * For this custom behaviour, the updateCurrent() moves the plane from side to side on the screen.
+ */
 #pragma once
 #include "Entity.h"
 #include <string>
