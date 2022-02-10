@@ -326,8 +326,7 @@ void Game::BuildRootSignature()
 		IID_PPV_ARGS(mRootSignature.GetAddressOf())));
 }
 
-//Once a texture resource is created, we need to create an SRV descriptor to it which we
-//can set to a root signature parameter slot for use by the shader programs.
+
 void Game::BuildDescriptorHeaps()
 {
 	//
@@ -350,34 +349,25 @@ void Game::BuildDescriptorHeaps()
 
 	D3D12_SHADER_RESOURCE_VIEW_DESC srvDesc = {};
 
-	//This mapping enables the shader resource view (SRV) to choose how memory gets routed to the 4 return components in a shader after a memory fetch.
-	//When a texture is sampled in a shader, it will return a vector of the texture data at the specified texture coordinates.
-	//This field provides a way to reorder the vector components returned when sampling the texture.
-	//D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING  will not reorder the components and just return the data in the order it is stored in the texture resource.
 	srvDesc.Shader4ComponentMapping = D3D12_DEFAULT_SHADER_4_COMPONENT_MAPPING;
 
 	srvDesc.Format = EagleTex->GetDesc().Format;
 
 	srvDesc.ViewDimension = D3D12_SRV_DIMENSION_TEXTURE2D;
 	srvDesc.Texture2D.MostDetailedMip = 0;
-	//The number of mipmap levels to view, starting at MostDetailedMip.This field, along with MostDetailedMip allows us to
-	//specify a subrange of mipmap levels to view.You can specify - 1 to indicate to view
-	//all mipmap levels from MostDetailedMip down to the last mipmap level.
 
 	srvDesc.Texture2D.MipLevels = EagleTex->GetDesc().MipLevels;
 
-	//Specifies the minimum mipmap level that can be accessed. 0.0 means all the mipmap levels can be accessed.
-	//Specifying 3.0 means mipmap levels 3.0 to MipCount - 1 can be accessed.
 	srvDesc.Texture2D.ResourceMinLODClamp = 0.0f;
 
 	md3dDevice->CreateShaderResourceView(EagleTex.Get(), &srvDesc, hDescriptor);
 
-	//Raptor Descriptor
+	//next descriptor
 	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
 	srvDesc.Format = RaptorTex->GetDesc().Format;
 	md3dDevice->CreateShaderResourceView(RaptorTex.Get(), &srvDesc, hDescriptor);
 
-	//Desert Descriptor
+	//next descriptor
 	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
 	srvDesc.Format = DesertTex->GetDesc().Format;
 	md3dDevice->CreateShaderResourceView(DesertTex.Get(), &srvDesc, hDescriptor);
@@ -401,13 +391,11 @@ void Game::BuildShadersAndInputLayout()
 void Game::BuildShapeGeometry()
 {
 	GeometryGenerator geoGen;
-	//GeometryGenerator::MeshData box = geoGen.CreateQuad(-0.5f, 0.5f, 1.0f, 1.0f, 1.0f);
 	GeometryGenerator::MeshData box = geoGen.CreateBox(20, 0.2, 20, 1);
 	SubmeshGeometry boxSubmesh;
 	boxSubmesh.IndexCount = (UINT)box.Indices32.size();
 	boxSubmesh.StartIndexLocation = 0;
 	boxSubmesh.BaseVertexLocation = 0;
-
 
 	std::vector<Vertex> vertices(box.Vertices.size());
 
@@ -528,7 +516,6 @@ void Game::BuildRenderItems()
 {
 	mWorld.buildScene();
 
-	// All the render items are opaque.
 	for (auto& e : mAllRitems)
 		mOpaqueRitems.push_back(e.get());
 }
@@ -541,7 +528,6 @@ void Game::DrawRenderItems(ID3D12GraphicsCommandList* cmdList, const std::vector
 	auto objectCB = mCurrFrameResource->ObjectCB->Resource();
 	auto matCB = mCurrFrameResource->MaterialCB->Resource();
 
-	// For each render item...
 	for (size_t i = 0; i < ritems.size(); ++i)
 	{
 		auto ri = ritems[i];
