@@ -15,7 +15,6 @@ World::World(Game* game)
 void World::update(const GameTimer& gt)
 {
 	mSceneGraph->update(gt);
-
 }
 
 void World::draw()
@@ -53,14 +52,14 @@ void World::buildScene()
 	mBackground = (bckGround*)backgroundSprite.get();
 	mBackground->setPosition(0, 0, 2.0);
 	mBackground->setScale(1.0, 1.0, 1);
-	mBackground->setVelocity(0.0, 0.0, -1.0);
+	mBackground->setVelocity(0.0, 0.0, -5.0);
 	mSceneGraph->attachChild(std::move(backgroundSprite));
 
 	std::unique_ptr<bckGround> backgroundSprite2(new bckGround(mGame));
 	mBackground2 = (bckGround*)backgroundSprite2.get();
 	mBackground2->setPosition(0, 0, 18);
 	mBackground2->setScale(1.0, 1.0, 1);
-	mBackground2->setVelocity(0.0, 0.0, -1.0);
+	mBackground2->setVelocity(0.0, 0.0, -5.0);
 	mSceneGraph->attachChild(std::move(backgroundSprite2));
 
 	mSceneGraph->build();

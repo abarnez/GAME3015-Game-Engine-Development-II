@@ -4,7 +4,7 @@
 #include "Common/UploadBuffer.h"
 #include "Common/GeometryGenerator.h"
 #include "Common/Camera.h"
-#include "FrameResource.h"
+#include "Common/FrameResource.h"
 
 using Microsoft::WRL::ComPtr;
 using namespace DirectX;

@@ -5,15 +5,11 @@ bckGround::bckGround(Game* game) : Entity(game)
 {
 }
 
-void bckGround::updateCurrent(GameTimer& gt)
+void bckGround::updateCurrent(const GameTimer& gt)
 {
 	XMFLOAT3 pos1 = this->getWorldPosition();
-	XMFLOAT3 pos2 = this->getWorldPosition();
 	if (pos1.z < -17.5) {
-		this->setPosition(0, 0, 18.5);
-
-	}
-	if (pos2.z < -17.5) {
+		OutputDebugString(L"Reset background\n");
 		this->setPosition(0, 0, 18.5);
 
 	}
