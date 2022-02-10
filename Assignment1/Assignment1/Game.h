@@ -1,3 +1,12 @@
+/**
+ * @file Game.h
+ * @author Alexander Barnes
+ * @date 2/9/2022
+ * @brief
+ * Some functions are absent of any code namely due to them being left over from other assignments but will be repurposed later on in the course.
+ * Mostly the functions to due with handling player input. OnResize, Update, Draw, UpdateObjectCBs, UpdateMaterialCBs, UpdateMainPassCBs, LoadTextures
+ * BuildRootSignature..etc are functions reused from code from a previous class repurposed and adapted for uses in this class.
+ */
 #include "World.h"
 
 class Game : public D3DApp
