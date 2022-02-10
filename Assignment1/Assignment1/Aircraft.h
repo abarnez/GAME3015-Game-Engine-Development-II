@@ -11,8 +11,7 @@
 #include "Entity.h"
 #include <string>
 
-class Aircraft :
-	public Entity
+class Aircraft : public Entity
 {
 public:
 	enum Type
@@ -25,15 +24,12 @@ public:
 public:
 	Aircraft(Type type, Game* game);
 	
-	void Strafe(float d);
+private:
+	void updateCurrent(const GameTimer& gt);
+	virtual void drawCurrent() const;
+	virtual void buildCurrent();
 
 private:
-	void				updateCurrent(const GameTimer& gt);
-	virtual void		drawCurrent() const;
-	virtual void		buildCurrent();
-
-
-private:
-	Type				mType;
-	std::string			mSprite;
+	Type mType;
+	std::string	mSprite;
 };

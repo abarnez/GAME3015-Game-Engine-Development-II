@@ -31,13 +31,17 @@ private:
 	Game* mGame;
 	SceneNode* mSceneGraph;
 	std::array<SceneNode*, LayerCount>	mSceneLayers;
+
 	XMFLOAT4 mWorldBounds;
 	XMFLOAT2 mSpawnPosition;
-	float mScrollSpeed;
-	Aircraft* mPlayerAircraft;
+
+	float mMoveSpeed;
+	
 	bckGround* mBackground;
 	bckGround* mBackground2;
-	Aircraft* raptor;
-	Aircraft* raptor2;
+
+	Aircraft* mPlayerAircraft;
+	Aircraft* escort1;
+	Aircraft* escort2;
 };
 

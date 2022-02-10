@@ -27,7 +27,6 @@ void Entity::updateCurrent(const GameTimer& gt)
 	mV.x = mVelocity.x * gt.DeltaTime();
 	mV.y = mVelocity.y * gt.DeltaTime();
 	mV.z = mVelocity.z * gt.DeltaTime();
-
 	move(mV.x, mV.y, mV.z);
 }
 
@@ -35,14 +34,9 @@ void Entity::updateChildren(const GameTimer & gt)
 {
 	for (Ptr& child : mChildren)
 	{
-		//OutputDebugString(L"Updating Children\n");
-
 		XMFLOAT2 mV;
 		mV.x = mVelocity.x * gt.DeltaTime();
 		mV.y = mVelocity.y * gt.DeltaTime();
-
 		child->move(mV.x, mV.y, 0);
-
-		//child->update(gt);
 	}
 }

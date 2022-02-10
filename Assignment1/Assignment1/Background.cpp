@@ -7,13 +7,10 @@ bckGround::bckGround(Game* game) : Entity(game)
 
 void bckGround::updateCurrent(const GameTimer& gt)
 {
-	XMFLOAT3 pos1 = this->getWorldPosition();
-	if (pos1.z < -17.5) {
-		OutputDebugString(L"Reset background\n");
-		this->setPosition(0, 0, 18.5);
-
+	XMFLOAT3 pos1 = this->getWorldPosition();	//Get Position of the background
+	if (pos1.z < -17.5) {						//Check the Z position to see if it has gone off screen
+		this->setPosition(0, 0, 18.5);			//If it has reset its position to the top of the screen
 	}
-
 	Entity::updateCurrent(gt);
 }
 
@@ -36,6 +33,5 @@ void bckGround::buildCurrent()
 	renderer->IndexCount = renderer->Geo->DrawArgs["box"].IndexCount;
 	renderer->StartIndexLocation = renderer->Geo->DrawArgs["box"].StartIndexLocation;
 	renderer->BaseVertexLocation = renderer->Geo->DrawArgs["box"].BaseVertexLocation;
-
 	game->getRenderItems().push_back(std::move(render));
 }

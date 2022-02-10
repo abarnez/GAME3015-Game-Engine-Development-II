@@ -1,13 +1,10 @@
 #include "SceneNode.h"
 #include "Game.h"
 
-SceneNode::SceneNode(Game* game)
-	: mChildren()
-	, mParent(nullptr)
-	, game(game)
+SceneNode::SceneNode(Game* game) : mChildren(), mParent(nullptr), game(game)	
 {
-	mWorldPosition = XMFLOAT3(0, 0, 0);
 	mWorldScaling = XMFLOAT3(1, 1, 1);
+	mWorldPosition = XMFLOAT3(0, 0, 0);
 	mWorldRotation = XMFLOAT3(0, 0, 0);
 }
 
@@ -36,7 +33,6 @@ void SceneNode::update(const GameTimer& gt)
 
 void SceneNode::updateCurrent(const GameTimer& gt)
 {
-	// Do nothing by default
 }
 
 void SceneNode::updateChildren(const GameTimer& gt)
@@ -55,7 +51,6 @@ void SceneNode::draw() const
 
 void SceneNode::drawCurrent() const
 {
-	//Empty for now
 }
 
 void SceneNode::drawChildren() const
@@ -74,7 +69,6 @@ void SceneNode::build()
 
 void SceneNode::buildCurrent()
 {
-	//Empty for now
 }
 
 void SceneNode::buildChildren()

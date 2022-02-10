@@ -35,11 +35,8 @@ private:
 	void UpdateMainPassCB(const GameTimer& gt);
 
 	void LoadTextures();
-
 	void BuildRootSignature();
-
 	void BuildDescriptorHeaps();
-
 	void BuildShadersAndInputLayout();
 	void BuildShapeGeometry();
 	void BuildPSOs();
@@ -50,31 +47,25 @@ private:
 
 	std::array<const CD3DX12_STATIC_SAMPLER_DESC, 6> GetStaticSamplers();
 
-private:
-
-	std::vector<std::unique_ptr<FrameResource>> mFrameResources;
+private:	
 	FrameResource* mCurrFrameResource = nullptr;
+
 	int mCurrFrameResourceIndex = 0;
 
 	UINT mCbvSrvDescriptorSize = 0;
 
 	ComPtr<ID3D12RootSignature> mRootSignature = nullptr;
-
 	ComPtr<ID3D12DescriptorHeap> mSrvDescriptorHeap = nullptr;
+	ComPtr<ID3D12PipelineState> mOpaquePSO = nullptr;
 
 	std::unordered_map<std::string, std::unique_ptr<MeshGeometry>> mGeometries;
 	std::unordered_map<std::string, std::unique_ptr<Material>> mMaterials;
-
 	std::unordered_map<std::string, std::unique_ptr<Texture>> mTextures;
-
 	std::unordered_map<std::string, ComPtr<ID3DBlob>> mShaders;
 
 	std::vector<D3D12_INPUT_ELEMENT_DESC> mInputLayout;
-
-	ComPtr<ID3D12PipelineState> mOpaquePSO = nullptr;
-
+	std::vector<std::unique_ptr<FrameResource>> mFrameResources;
 	std::vector<std::unique_ptr<RenderItem>> mAllRitems;
-
 	std::vector<RenderItem*> mOpaqueRitems;
 
 	PassConstants mMainPassCB;

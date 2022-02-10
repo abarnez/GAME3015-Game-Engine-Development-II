@@ -11,8 +11,7 @@
 #pragma once
 #include "Entity.h"
 
-class bckGround :
-	public Entity
+class bckGround : public Entity
 {
 public:
 	bckGround(Game* game);

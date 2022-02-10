@@ -1,14 +1,7 @@
 #include "World.h"
 
-World::World(Game* game)
-	: mSceneGraph(new SceneNode(game))
-	, mGame(game)
-	, mPlayerAircraft(nullptr)
-	, mBackground(nullptr)
-	, mBackground2(nullptr)
-	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)
-	, mSpawnPosition(0.f, 0.f)
-	, mScrollSpeed(-0.f)
+World::World(Game* game)	: mSceneGraph(new SceneNode(game))	, mGame(game)	, mPlayerAircraft(nullptr)	, mBackground(nullptr)	, mBackground2(nullptr)
+	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)	, mSpawnPosition(0.f, 0.f)	, mMoveSpeed(-0.f)
 {
 }
 
@@ -23,30 +16,28 @@ void World::draw()
 }
 
 
-
 void World::buildScene()
 {
-
 	std::unique_ptr<Aircraft> player(new Aircraft(Aircraft::Eagle, mGame));
 	mPlayerAircraft = (Aircraft*)player.get();
 	mPlayerAircraft->setPosition(0, 2.5, 0);
 	mPlayerAircraft->setScale(0.1, 0.1, 0.1);
-	mPlayerAircraft->setVelocity(5, mScrollSpeed, 0);
+	mPlayerAircraft->setVelocity(5, mMoveSpeed, 0);
 	mSceneGraph->attachChild(std::move(player));
 	
-	std::unique_ptr<Aircraft> enemy(new Aircraft(Aircraft::Raptor, mGame));
-	raptor = (Aircraft*)enemy.get();
-	raptor->setPosition(2, 2, -1);
-	raptor->setScale(0.1, 0.1, 0.1);
-	raptor->setVelocity(5, mScrollSpeed, 0);
-	mPlayerAircraft->attachChild(std::move(enemy));
+	std::unique_ptr<Aircraft> escortr(new Aircraft(Aircraft::Raptor, mGame));
+	escort1 = (Aircraft*)escortr.get();
+	escort1->setPosition(2, 2, -1);
+	escort1->setScale(0.1, 0.1, 0.1);
+	escort1->setVelocity(5, mMoveSpeed, 0);
+	mPlayerAircraft->attachChild(std::move(escortr));
 	
-	std::unique_ptr<Aircraft> enemy2(new Aircraft(Aircraft::Raptor, mGame));
-	raptor2 = (Aircraft*)enemy2.get();
-	raptor2->setPosition(-2, 2, -1);
-	raptor2->setScale(0.1, 0.1, 0.1);
-	raptor2->setVelocity(5, mScrollSpeed, 0);
-	mPlayerAircraft->attachChild(std::move(enemy2));
+	std::unique_ptr<Aircraft> escortl(new Aircraft(Aircraft::Raptor, mGame));
+	escort2 = (Aircraft*)escortl.get();
+	escort2->setPosition(-2, 2, -1);
+	escort2->setScale(0.1, 0.1, 0.1);
+	escort2->setVelocity(5, mMoveSpeed, 0);
+	mPlayerAircraft->attachChild(std::move(escortl));
 
 	std::unique_ptr<bckGround> backgroundSprite(new bckGround(mGame));
 	mBackground = (bckGround*)backgroundSprite.get();
