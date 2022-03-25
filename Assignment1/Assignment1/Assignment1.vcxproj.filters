@@ -32,6 +32,8 @@
     <ClCompile Include="Common\Camera.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="CommandQueue.cpp" />
+    <ClCompile Include="Command.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aircraft.h" />
@@ -73,6 +75,9 @@
     <ClInclude Include="Common\Camera.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="CommandQueue.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Category.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">
