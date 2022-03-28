@@ -12,6 +12,7 @@
 #include "SceneNode.h"
 #include "Aircraft.h"
 #include "Background.h"
+#include "CommandQueue.h"
 
 class World
 {
@@ -30,6 +31,7 @@ private:
 private:
 	Game* mGame;
 	SceneNode* mSceneGraph;
+	CommandQueue* mQueue;
 	std::array<SceneNode*, LayerCount>	mSceneLayers;
 
 	XMFLOAT4 mWorldBounds;

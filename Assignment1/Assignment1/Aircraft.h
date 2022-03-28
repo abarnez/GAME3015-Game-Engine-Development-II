@@ -23,6 +23,17 @@ public:
 
 public:
 	Aircraft(Type type, Game* game);
+	unsigned int Aircraft::getCategory() const
+	{
+		switch (mType)
+		{
+		case Eagle:
+			return Category::PlayerAircraft;
+		default:
+			return Category::EnemyAircraft;
+		}
+	}
+
 	
 private:
 	void updateCurrent(const GameTimer& gt);

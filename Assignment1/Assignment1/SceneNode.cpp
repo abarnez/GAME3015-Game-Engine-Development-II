@@ -1,5 +1,6 @@
 #include "SceneNode.h"
 #include "Game.h"
+#include "Category.h"
 
 SceneNode::SceneNode(Game* game) : mChildren(), mParent(nullptr), game(game)	
 {
@@ -141,3 +142,12 @@ void SceneNode::move(float x, float y, float z)
 	mWorldPosition.y += y;
 	mWorldPosition.z += z;
 }
+
+void SceneNode::onCommand(const Command& command, GameTimer& gt)
+{
+	if (command.category & getCategory())
+		command.action(*this, gt);
+	for (Ptr& child : mChildren)
+		child->onCommand(command, gt);
+}
+

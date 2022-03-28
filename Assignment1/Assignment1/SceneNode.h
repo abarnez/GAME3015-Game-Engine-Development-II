@@ -5,6 +5,8 @@
 #include "Common/GeometryGenerator.h"
 #include "Common/Camera.h"
 #include "Common/FrameResource.h"
+#include "Category.h"
+#include "Command.h"
 
 using Microsoft::WRL::ComPtr;
 using namespace DirectX;
@@ -59,13 +61,17 @@ public:
 	Ptr detachChild(const SceneNode& node);
 	void attachChild(Ptr child);
 	void update(const GameTimer& gt);
+	void onCommand(const Command& command, GameTimer& gt);
 	void draw() const;
 	void build();
 	void move(float x, float y, float z);
 	void setPosition(float x, float y, float z);
 	void setWorldRotation(float x, float y, float z);
 	void setScale(float x, float y, float z);
-
+	unsigned int SceneNode::getCategory() const
+	{
+		return Category::Scene;
+	}
 	XMFLOAT3 getWorldPosition() const;
 	XMFLOAT3 getWorldRotation() const;
 	XMFLOAT3 getWorldScale() const;

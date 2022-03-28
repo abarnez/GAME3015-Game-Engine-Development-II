@@ -49,3 +49,4 @@ void Aircraft::buildCurrent()
 	renderer->BaseVertexLocation = renderer->Geo->DrawArgs["box"].BaseVertexLocation;
 	game->getRenderItems().push_back(std::move(render));
 }
+
