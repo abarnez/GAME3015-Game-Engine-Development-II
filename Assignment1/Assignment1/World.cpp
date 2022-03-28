@@ -5,6 +5,9 @@ World::World(Game* game)	: mSceneGraph(new SceneNode(game))	, mGame(game)	, mPla
 {
 }
 
+
+
+
 void World::update(const GameTimer& gt)
 {
 	mSceneGraph->update(gt);

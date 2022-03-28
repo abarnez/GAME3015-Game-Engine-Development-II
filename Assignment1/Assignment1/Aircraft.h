@@ -34,6 +34,19 @@ public:
 		}
 	}
 
+	struct AircraftMover
+	{
+		AircraftMover(float vx, float vy, float vz) :
+			velocity(vx, vy, vz)
+		{
+		}
+		void operator() (SceneNode& node, GameTimer& gt) const
+		{
+			Aircraft& aircraft = static_cast<Aircraft&>(node);
+			aircraft.accelerate(velocity);
+		}
+		XMFLOAT3 velocity;
+	};
 	
 private:
 	void updateCurrent(const GameTimer& gt);
