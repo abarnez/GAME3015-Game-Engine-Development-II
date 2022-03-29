@@ -23,7 +23,8 @@ public:
 
 public:
 	Aircraft(Type type, Game* game);
-	unsigned int Aircraft::getCategory() const
+	virtual unsigned int getCategory() const;
+		/*
 	{
 		switch (mType)
 		{
@@ -33,20 +34,8 @@ public:
 			return Category::EnemyAircraft;
 		}
 	}
-
-	struct AircraftMover
-	{
-		AircraftMover(float vx, float vy, float vz) :
-			velocity(vx, vy, vz)
-		{
-		}
-		void operator() (SceneNode& node, GameTimer& gt) const
-		{
-			Aircraft& aircraft = static_cast<Aircraft&>(node);
-			aircraft.accelerate(velocity);
-		}
-		XMFLOAT3 velocity;
-	};
+	*/
+	
 	
 private:
 	void updateCurrent(const GameTimer& gt);
