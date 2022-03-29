@@ -24,17 +24,7 @@ public:
 public:
 	Aircraft(Type type, Game* game);
 	virtual unsigned int getCategory() const;
-		/*
-	{
-		switch (mType)
-		{
-		case Eagle:
-			return Category::PlayerAircraft;
-		default:
-			return Category::EnemyAircraft;
-		}
-	}
-	*/
+
 	
 	
 private:

@@ -13,6 +13,7 @@
 #include "Aircraft.h"
 #include "Background.h"
 #include "CommandQueue.h"
+#include "Command.h"
 
 class World
 {
@@ -21,6 +22,7 @@ public:
 	void update(const GameTimer& gt);
 	void draw();
 	void buildScene();
+	CommandQueue& getCommandQueue();
 private:
 	enum Layer
 	{
@@ -31,7 +33,7 @@ private:
 private:
 	Game* mGame;
 	SceneNode* mSceneGraph;
-	CommandQueue* mQueue;
+	CommandQueue mCommandQueue;
 	std::array<SceneNode*, LayerCount>	mSceneLayers;
 
 	XMFLOAT4 mWorldBounds;

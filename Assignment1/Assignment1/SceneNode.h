@@ -15,6 +15,8 @@ using namespace DirectX::PackedVector;
 #pragma comment(lib, "d3dcompiler.lib")
 #pragma comment(lib, "D3D12.lib")
 
+struct Command;
+
 struct RenderItem
 {
 	RenderItem() = default;
@@ -62,6 +64,7 @@ public:
 	void attachChild(Ptr child);
 	void update(const GameTimer& gt);
 	void onCommand(const Command& command, GameTimer& gt);
+	virtual unsigned int getCategory() const;
 	void draw() const;
 	void build();
 	void move(float x, float y, float z);

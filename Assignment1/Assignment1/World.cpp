@@ -1,11 +1,13 @@
 #include "World.h"
 
 World::World(Game* game)	: mSceneGraph(new SceneNode(game))	, mGame(game)	, mPlayerAircraft(nullptr)	, mBackground(nullptr)	, mBackground2(nullptr)
-	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)	, mSpawnPosition(0.f, 0.f)	, mMoveSpeed(-0.f), mQueue(nullptr)
+	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)	, mSpawnPosition(0.f, 0.f)	, mMoveSpeed(-0.f) 
 {
 }
 
-
+CommandQueue& World::getCommandQueue() {
+	return mCommandQueue;
+}
 
 
 void World::update(const GameTimer& gt)
@@ -13,8 +15,8 @@ void World::update(const GameTimer& gt)
 	mSceneGraph->update(gt);
 
 	// Forward commands to the scene graph
-	while (!mQueue->isEmpty())
-		mSceneGraph->onCommand(mQueue->pop(), gt);
+	while (!mCommandQueue.isEmpty())
+		mSceneGraph->onCommand(mCommandQueue.pop(), gt.DeltaTime); //not sure if this is correct
 
 
 

@@ -1,6 +1,7 @@
 #include "SceneNode.h"
 #include "Game.h"
 #include "Category.h"
+#include "Command.h"
 
 SceneNode::SceneNode(Game* game) : mChildren(), mParent(nullptr), game(game)	
 {
@@ -147,7 +148,12 @@ void SceneNode::onCommand(const Command& command, GameTimer& gt)
 {
 	if (command.category & getCategory())
 		command.action(*this, gt);
+
 	for (Ptr& child : mChildren)
 		child->onCommand(command, gt);
 }
 
+unsigned int SceneNode::getCategory() const
+{
+	return Category::Scene;
+}
