@@ -10,12 +10,12 @@ struct Command
 {
 	Command();
 
-	std::function<void(SceneNode&, GameTimer&)>	action;
+	std::function<void(SceneNode&, GameTimer& gt)>	action;
 	unsigned int								category;
 };
 
 template <typename GameObject, typename Function>
-std::function<void(SceneNode&, GameTimer&)> derivedAction(Function fn)
+std::function<void(SceneNode&, GameTimer& gt)> derivedAction(Function fn)
 {
 	return [=](SceneNode& node, GameTimer& gt)
 	{
