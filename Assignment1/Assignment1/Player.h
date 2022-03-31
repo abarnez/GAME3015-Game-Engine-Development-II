@@ -31,8 +31,8 @@ private:
 
 
 private:
-	
-	std::map<sf::Keyboard::Key, Action>		mKeyBinding;
+	//int a = GetAsyncKeyState((int)VK_LEFT);
+	std::map<int, Action>		mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
 #pragma endregion
 

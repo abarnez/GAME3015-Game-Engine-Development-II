@@ -3,11 +3,13 @@
 #include "CommandQueue.h"
 #include "Aircraft.h"
 
+
 #include <map>
 #include <string>
 #include <algorithm>
 #include <iostream>
 
+#define VK_P 0x50
 
 struct AircraftMover
 {
@@ -27,11 +29,11 @@ struct AircraftMover
 Player::Player()
 {
 	// Set initial key bindings
-	mKeyBinding[sf::Keyboard::Left] = MoveLeft;
-	mKeyBinding[sf::Keyboard::Right] = MoveRight;
-	mKeyBinding[sf::Keyboard::Up] = MoveUp;
-	mKeyBinding[sf::Keyboard::Down] = MoveDown;
-	mKeyBinding[sf::Keyboard::P] = GetPosition;
+	mKeyBinding[VK_LEFT] = MoveLeft;
+	mKeyBinding[VK_RIGHT] = MoveRight;
+	mKeyBinding[VK_UP] = MoveUp;
+	mKeyBinding[VK_DOWN] = MoveDown;
+	mKeyBinding[VK_P] = GetPosition;
 
 	// Set initial action bindings
 	initializeActions();
@@ -40,7 +42,7 @@ Player::Player()
 	for (auto& pair : mActionBinding)
 		pair.second.category = Category::PlayerAircraft;
 }
-
+int b = keybd_event();
 void Player::handleEvent(const sf::Event& event, CommandQueue& commands)
 {
 	if (event.type == sf::Event::KeyPressed)

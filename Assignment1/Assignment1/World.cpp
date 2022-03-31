@@ -16,7 +16,7 @@ void World::update(const GameTimer& gt)
 
 	// Forward commands to the scene graph
 	while (!mCommandQueue.isEmpty())
-		mSceneGraph->onCommand(mCommandQueue.pop(), gt.DeltaTime); //not sure if this is correct
+		mSceneGraph->onCommand(mCommandQueue.pop(), gt); //not sure if this is correct
 
 
 
