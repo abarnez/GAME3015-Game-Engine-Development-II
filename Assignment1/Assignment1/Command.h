@@ -1,6 +1,8 @@
 
 #pragma once
 #include "Category.h"
+
+#include "Common/d3dApp.h"
 #include <functional>
 #include <cassert>
 

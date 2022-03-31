@@ -34,6 +34,7 @@
     </ClCompile>
     <ClCompile Include="CommandQueue.cpp" />
     <ClCompile Include="Command.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aircraft.h" />
