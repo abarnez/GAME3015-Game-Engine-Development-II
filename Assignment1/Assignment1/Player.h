@@ -8,7 +8,7 @@ class Player
 {
 public:
 	Player();
-	void					handleEvent(const sf::Event& event, CommandQueue& commands);
+	void					handleEvent(CommandQueue& commands);
 	void					handleRealtimeInput(CommandQueue& commands);
 #pragma region step 1
 	//static const float		PlayerSpeed;
@@ -21,19 +21,21 @@ public:
 		GetPosition,
 		ActionCount
 	};
-	void					assignKey(Action action, sf::Keyboard::Key key);
-	sf::Keyboard::Key		getAssignedKey(Action action) const;
+	void					assignKey(Action action, int key);
+	int						getAssignedKey(Action action) const;
 
 
 private:
 	void					initializeActions();
 	static bool				isRealtimeAction(Action action);
+	void					ResetKeyChecks();
 
 
 private:
 	//int a = GetAsyncKeyState((int)VK_LEFT);
-	std::map<int, Action>		mKeyBinding;
+	std::map<int, Action>					mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
+	std::map<int, bool>						mKeyChecks;
 #pragma endregion
 
 
