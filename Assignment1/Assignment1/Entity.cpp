@@ -41,13 +41,15 @@ void Entity::updateChildren(const GameTimer & gt)
 	}
 }
 
+/*
 void Entity::accelerate(XMFLOAT3 velocity)
 {
 	mVelocity += velocity; //not sure whats going on here
 }
-
-void Entity::accelerate(float vx, float vy)
+*/
+void Entity::accelerate(float vx, float vy, float vz)
 {
 	mVelocity.x += vx;
 	mVelocity.y += vy;
+	mVelocity.z += vz;
 }

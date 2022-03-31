@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-
+#include "Common/d3dApp.h"
 
 class CommandQueue;
 
@@ -31,6 +31,7 @@ private:
 
 
 private:
+	
 	std::map<sf::Keyboard::Key, Action>		mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
 #pragma endregion

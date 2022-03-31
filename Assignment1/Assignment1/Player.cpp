@@ -11,17 +11,17 @@
 
 struct AircraftMover
 {
-	AircraftMover(float vx, float vy)
-		: velocity(vx, vy)
+	AircraftMover(float vx, float vy, float vz)
+		: velocity(vx, vy, vz)
 	{
 	}
 
-	void operator() (Aircraft& aircraft, sf::Time) const
+	void operator() (Aircraft& aircraft, GameTimer&) const
 	{
 		aircraft.accelerate(velocity);
 	}
 
-	sf::Vector2f velocity;
+	XMFLOAT3 velocity;
 };
 
 Player::Player()
