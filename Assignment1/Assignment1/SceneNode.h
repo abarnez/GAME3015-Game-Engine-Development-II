@@ -64,14 +64,14 @@ public:
 	void attachChild(Ptr child);
 	void update(const GameTimer& gt);
 	void onCommand(const Command& command, const GameTimer& gt);
-	virtual unsigned int getCategory() const;
+	//virtual unsigned int getCategory() const;
 	void draw() const;
 	void build();
 	void move(float x, float y, float z);
 	void setPosition(float x, float y, float z);
 	void setWorldRotation(float x, float y, float z);
 	void setScale(float x, float y, float z);
-	unsigned int SceneNode::getCategory() const
+	unsigned int getCategory() const
 	{
 		return Category::Scene;
 	}

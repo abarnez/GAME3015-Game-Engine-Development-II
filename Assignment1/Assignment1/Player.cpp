@@ -9,7 +9,6 @@
 #include <algorithm>
 #include <iostream>
 
-#define VK_P 0x50
 
 struct AircraftMover
 {
@@ -46,7 +45,7 @@ Player::Player()
 
 void Player::ResetKeyChecks()
 {
-	mKeyChecks.Clear();
+	mKeyChecks.clear();
 	for (auto pair : mKeyBinding)
 	{
 		mKeyChecks[pair.first] = false;
@@ -63,9 +62,26 @@ void Player::handleEvent(CommandQueue& commands)
 	//		commands.push(mActionBinding[found->second]);
 	//}
 
-	if (auto pair : mKeyBinding)
+	for (auto pair : mKeyBinding)
 	{
-
+		if (!isRealtimeAction(pair.second))
+		{
+			if (mKeyChecks[pair.first])
+			{
+				if (!GetAsyncKeyState(pair.first))
+				{
+					mKeyChecks[pair.first] = false;
+				}
+			}
+			else
+			{
+				if (GetAsyncKeyState(pair.first) & 0x8000)
+				{
+					mKeyChecks[pair.first] = true;
+					commands.push(mActionBinding[pair.second]);
+				}
+			}
+		}
 	}
 }
 
@@ -80,7 +96,7 @@ void Player::handleRealtimeInput(CommandQueue& commands)
 	}
 }
 
-void Player::assignKey(Action action, int key)
+void Player::assignKey(Action action, char key)
 {
 	// Remove all keys that already map to action
 	for (auto itr = mKeyBinding.begin(); itr != mKeyBinding.end(); )
@@ -95,7 +111,7 @@ void Player::assignKey(Action action, int key)
 	mKeyBinding[key] = action;
 }
 
-int Player::getAssignedKey(Action action) const
+char Player::getAssignedKey(Action action) const
 {
 	for (auto pair : mKeyBinding)
 	{
@@ -103,7 +119,7 @@ int Player::getAssignedKey(Action action) const
 			return pair.first;
 	}
 
-	return 0;
+	return 0x00;
 }
 
 void Player::initializeActions()

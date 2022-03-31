@@ -21,8 +21,8 @@ public:
 		GetPosition,
 		ActionCount
 	};
-	void					assignKey(Action action, int key);
-	int						getAssignedKey(Action action) const;
+	void					assignKey(Action action, char key);
+	char					getAssignedKey(Action action) const;
 
 
 private:
@@ -33,9 +33,9 @@ private:
 
 private:
 	//int a = GetAsyncKeyState((int)VK_LEFT);
-	std::map<int, Action>					mKeyBinding;
+	std::map<char, Action>					mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
-	std::map<int, bool>						mKeyChecks;
+	std::map<char, bool>					mKeyChecks;
 #pragma endregion
 
 
