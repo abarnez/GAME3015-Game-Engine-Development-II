@@ -8,6 +8,7 @@
  * BuildRootSignature..etc are functions reused from code from a previous class repurposed and adapted for uses in this class.
  */
 #include "World.h"
+#include "Player.h"
 
 class Game : public D3DApp
 {

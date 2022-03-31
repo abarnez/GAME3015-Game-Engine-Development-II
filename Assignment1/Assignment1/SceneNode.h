@@ -63,7 +63,7 @@ public:
 	Ptr detachChild(const SceneNode& node);
 	void attachChild(Ptr child);
 	void update(const GameTimer& gt);
-	void onCommand(const Command& command, const GameTimer& gt);
+	void onCommand(const Command& command,const GameTimer& gt);
 	//virtual unsigned int getCategory() const;
 	void draw() const;
 	void build();

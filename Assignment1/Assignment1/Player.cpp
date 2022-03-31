@@ -17,9 +17,9 @@ struct AircraftMover
 	{
 	}
 
-	void operator() (Aircraft& aircraft, GameTimer&) const
+	void operator() (Aircraft& aircraft,const GameTimer&) const
 	{
-		aircraft.accelerate(velocity);
+		aircraft.accelerate(velocity.x, velocity.y, velocity.z);
 	}
 
 	XMFLOAT3 velocity;
@@ -130,9 +130,11 @@ void Player::initializeActions()
 	mActionBinding[MoveRight].action = derivedAction<Aircraft>(AircraftMover(+playerSpeed, 0.f, 0.f));
 	mActionBinding[MoveUp].action = derivedAction<Aircraft>(AircraftMover(0.f, 0.f, -playerSpeed));
 	mActionBinding[MoveDown].action = derivedAction<Aircraft>(AircraftMover(0.f, 0.f, +playerSpeed));
-	/*mActionBinding[GetPosition].action = [](SceneNode& s, sf::Time) {
+	/*
+	mActionBinding[GetPosition].action = [](SceneNode& s, GameTimer) {
 		std::cout << s.getWorldPosition().x << "," << s.getWorldPosition().y << "\n";
-	};*/
+	};
+	*/
 }
 
 bool Player::isRealtimeAction(Action action)
