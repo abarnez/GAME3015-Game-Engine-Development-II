@@ -34,10 +34,11 @@ void Entity::updateChildren(const GameTimer & gt)
 {
 	for (Ptr& child : mChildren)
 	{
-		XMFLOAT2 mV;
+		XMFLOAT3 mV;
 		mV.x = mVelocity.x * gt.DeltaTime();
 		mV.y = mVelocity.y * gt.DeltaTime();
-		child->move(mV.x, mV.y, 0);
+		mV.z = mVelocity.z * gt.DeltaTime();
+		child->move(mV.x, mV.y, mV.z);
 	}
 }
 
