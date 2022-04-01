@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['indexcount_0',['IndexCount',['../struct_render_item.html#ad95fafa012c0d99c216b998f11207e38',1,'RenderItem']]]
+  ['escort1_0',['escort1',['../class_world.html#a707710cc3a9d49979b059b494f8a9219',1,'World']]],
+  ['escort2_1',['escort2',['../class_world.html#a59afa9e619a6753b6e812725a5bd8324',1,'World']]]
 ];

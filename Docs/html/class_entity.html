@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Game Engine Development II Assignment 1: Entity Class Reference</title>
+<title>Game Engine Development II Assignment 2: Entity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Game Engine Development II Assignment 1<span id="projectnumber">&#160;Assignment 1</span>
+   <div id="projectname">Game Engine Development II Assignment 2<span id="projectnumber">&#160;Assignment 2</span>
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abb3c22fe7e78968131560642e360e12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4fcc5c9f7e9d705502269444ef3eca3"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#af4fcc5c9f7e9d705502269444ef3eca3">getVelocity</a> () const</td></tr>
 <tr class="separator:af4fcc5c9f7e9d705502269444ef3eca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6604e7ba4eee5511a6aa21345cbdaf28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a6604e7ba4eee5511a6aa21345cbdaf28">accelerate</a> (XMFLOAT3 velocity)</td></tr>
+<tr class="separator:a6604e7ba4eee5511a6aa21345cbdaf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c71a179fcbb868c8ae01e98aaf79a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#aa2c71a179fcbb868c8ae01e98aaf79a9">accelerate</a> (float vx, float vy, float vz)</td></tr>
+<tr class="separator:aa2c71a179fcbb868c8ae01e98aaf79a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ba9cb8ca54fff11ad7397334edcd94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94">updateCurrent</a> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:ac2ba9cb8ca54fff11ad7397334edcd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2480219b09ff913bc2b0d035ce21b9e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a2480219b09ff913bc2b0d035ce21b9e4">updateChildren</a> (const GameTimer &amp;gt)</td></tr>
@@ -135,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acdfa2c2ba28bce076c886eaba2d9e650 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858b7a088c0a2d01aaa90baf05d58d08 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08">update</a> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:a858b7a088c0a2d01aaa90baf05d58d08 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378e78ad679c28301c0db51afa389cb6 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a378e78ad679c28301c0db51afa389cb6">onCommand</a> (const <a class="el" href="struct_command.html">Command</a> &amp;command, const GameTimer &amp;gt)</td></tr>
+<tr class="separator:a378e78ad679c28301c0db51afa389cb6 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b1a847182e49103bc145bd4604e056 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a41b1a847182e49103bc145bd4604e056">draw</a> () const</td></tr>
 <tr class="separator:a41b1a847182e49103bc145bd4604e056 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ca883a91d8c45004a0786330548d8f inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a67ca883a91d8c45004a0786330548d8f">build</a> ()</td></tr>
@@ -147,6 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66fa14e7553900ae540f13e4dc5f749b inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753cea60b8a939a82a47258f4a51df82 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a753cea60b8a939a82a47258f4a51df82">setScale</a> (float x, float y, float z)</td></tr>
 <tr class="separator:a753cea60b8a939a82a47258f4a51df82 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af713a8c58831a27bc791a2efdfb7c495 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#af713a8c58831a27bc791a2efdfb7c495">getCategory</a> () const</td></tr>
+<tr class="separator:af713a8c58831a27bc791a2efdfb7c495 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ba2f5754854829e7e49f135bb4fce45 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a6ba2f5754854829e7e49f135bb4fce45">getWorldPosition</a> () const</td></tr>
 <tr class="separator:a6ba2f5754854829e7e49f135bb4fce45 inherit pub_methods_class_scene_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5ce797162b569b79494b7c2a696713 inherit pub_methods_class_scene_node"><td class="memItemLeft" align="right" valign="top">XMFLOAT3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_node.html#a1a5ce797162b569b79494b7c2a696713">getWorldRotation</a> () const</td></tr>
@@ -218,6 +226,62 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa2c71a179fcbb868c8ae01e98aaf79a9" name="aa2c71a179fcbb868c8ae01e98aaf79a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c71a179fcbb868c8ae01e98aaf79a9">&#9670;&nbsp;</a></span>accelerate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::accelerate </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00053">53</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6604e7ba4eee5511a6aa21345cbdaf28" name="a6604e7ba4eee5511a6aa21345cbdaf28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6604e7ba4eee5511a6aa21345cbdaf28">&#9670;&nbsp;</a></span>accelerate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::accelerate </td>
+          <td>(</td>
+          <td class="paramtype">XMFLOAT3&#160;</td>
+          <td class="paramname"><em>velocity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00046">46</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+
+</div>
+</div>
 <a id="af4fcc5c9f7e9d705502269444ef3eca3" name="af4fcc5c9f7e9d705502269444ef3eca3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4fcc5c9f7e9d705502269444ef3eca3">&#9670;&nbsp;</a></span>getVelocity()</h2>
 
@@ -368,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00027">27</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00028">28</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
 
 </div>
 </div>

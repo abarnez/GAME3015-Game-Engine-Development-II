@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['layer_0',['Layer',['../class_world.html#a7580b1f38bb9018be3eeef74462b4b2f',1,'World']]],
-  ['layercount_1',['LayerCount',['../class_world.html#a7580b1f38bb9018be3eeef74462b4b2fab85a44d6989a43dc11f11bacedb2bf94',1,'World']]],
-  ['loadtextures_2',['LoadTextures',['../class_game.html#ad23eba18656a646756a98bcda25a98a4',1,'Game']]]
+  ['handleevent_0',['handleEvent',['../class_player.html#abdabbfe5ce0c04acf504ff5054dbcbc1',1,'Player']]],
+  ['handlerealtimeinput_1',['handleRealtimeInput',['../class_player.html#ac520744c103fb38763c8856b4f158627',1,'Player']]]
 ];

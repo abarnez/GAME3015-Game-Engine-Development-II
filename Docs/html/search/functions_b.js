@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['update_0',['Update',['../class_game.html#ab9244991993b5a1cbde3f1f2d73f2745',1,'Game']]],
-  ['update_1',['update',['../class_scene_node.html#a858b7a088c0a2d01aaa90baf05d58d08',1,'SceneNode::update()'],['../class_world.html#a36c003f54e14e022a360551af5e7923e',1,'World::update()']]],
-  ['updatecamera_2',['UpdateCamera',['../class_game.html#a077400cce3bd3e41333b8228b386e450',1,'Game']]],
-  ['updatechildren_3',['updateChildren',['../class_entity.html#a2480219b09ff913bc2b0d035ce21b9e4',1,'Entity::updateChildren()'],['../class_scene_node.html#abffcfe9a66a65d5fe0d6f25c89e8e1a0',1,'SceneNode::updateChildren()']]],
-  ['updatecurrent_4',['updateCurrent',['../class_aircraft.html#aca42bd5bcaeac91ae9356a0c211dc1a2',1,'Aircraft::updateCurrent()'],['../classbck_ground.html#a5ad88cf10b0e4ff080908beeaf83fc74',1,'bckGround::updateCurrent()'],['../class_entity.html#ac2ba9cb8ca54fff11ad7397334edcd94',1,'Entity::updateCurrent()'],['../class_scene_node.html#a49981a42b39c510d272aa5db19f7b4ec',1,'SceneNode::updateCurrent()']]],
-  ['updatemainpasscb_5',['UpdateMainPassCB',['../class_game.html#aa3bb0452e306c88eadfb2d4eedf5ad25',1,'Game']]],
-  ['updatematerialcbs_6',['UpdateMaterialCBs',['../class_game.html#a4b7fd5dda779a7dd834dd7d26566b657',1,'Game']]],
-  ['updateobjectcbs_7',['UpdateObjectCBs',['../class_game.html#a1bdfe76a8bfdff007837cb2d2c3c59d6',1,'Game']]]
+  ['player_0',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player']]],
+  ['pop_1',['pop',['../class_command_queue.html#ac2dde510222b8df393b55978f4594194',1,'CommandQueue']]],
+  ['processinput_2',['processInput',['../class_game.html#a815a3ec2787b4b1c4077d28165c380e8',1,'Game']]],
+  ['push_3',['push',['../class_command_queue.html#ad444e0d7af45d9e09b834f0cec1e1f43',1,'CommandQueue']]]
 ];

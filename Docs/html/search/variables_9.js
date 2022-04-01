@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['startindexlocation_0',['StartIndexLocation',['../struct_render_item.html#a979179c6dd354cd329563e3599245463',1,'RenderItem']]]
+  ['primitivetype_0',['PrimitiveType',['../struct_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]]
 ];

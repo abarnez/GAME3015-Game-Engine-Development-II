@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scenenode_0',['SceneNode',['../class_scene_node.html',1,'']]]
+  ['world_0',['World',['../class_world.html',1,'']]]
 ];

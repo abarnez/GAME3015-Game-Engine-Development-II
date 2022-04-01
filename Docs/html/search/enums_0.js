@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layer_0',['Layer',['../class_world.html#a7580b1f38bb9018be3eeef74462b4b2f',1,'World']]]
+  ['action_0',['Action',['../class_player.html#a2da5df212d083bbb1460237f34ab0d88',1,'Player']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['winmain_0',['WinMain',['../main_8cpp.html#aabcda87589d774901aa87061b8fd0176',1,'main.cpp']]],
-  ['world_1',['World',['../class_world.html',1,'World'],['../struct_render_item.html#a2e0a651d0ad4ba7975455e22fbde1a28',1,'RenderItem::World()'],['../class_world.html#a712eb4a5b0d12588dd61d10c91b83366',1,'World::World()']]],
-  ['world_2ecpp_2',['World.cpp',['../_world_8cpp.html',1,'']]],
-  ['world_2eh_3',['World.h',['../_world_8h.html',1,'']]]
+  ['textransform_0',['TexTransform',['../struct_render_item.html#ac6799548474209d172cbb3d337f56074',1,'RenderItem']]],
+  ['type_1',['Type',['../class_aircraft.html#a7dae28542933e088032b753600046acd',1,'Aircraft::Type()'],['../namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0',1,'Category::Type()']]]
 ];

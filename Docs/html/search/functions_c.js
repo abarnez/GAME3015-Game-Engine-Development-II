@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['winmain_0',['WinMain',['../main_8cpp.html#aabcda87589d774901aa87061b8fd0176',1,'main.cpp']]],
-  ['world_1',['World',['../class_world.html#a712eb4a5b0d12588dd61d10c91b83366',1,'World']]]
+  ['renderitem_0',['RenderItem',['../struct_render_item.html#ad6c4cbd7fea14ab4b71bd3be38208487',1,'RenderItem']]],
+  ['resetkeychecks_1',['ResetKeyChecks',['../class_player.html#a15b9781195ce76a91dce1d87f9657e8f',1,'Player']]]
 ];

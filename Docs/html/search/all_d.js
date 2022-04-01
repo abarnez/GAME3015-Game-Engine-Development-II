@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['scenenode_0',['SceneNode',['../class_scene_node.html',1,'SceneNode'],['../class_scene_node.html#af1f3bf5e98c8b2c90b36057df2577d1a',1,'SceneNode::SceneNode()']]],
-  ['scenenode_2ecpp_1',['SceneNode.cpp',['../_scene_node_8cpp.html',1,'']]],
-  ['scenenode_2eh_2',['SceneNode.h',['../_scene_node_8h.html',1,'']]],
-  ['setposition_3',['setPosition',['../class_scene_node.html#a45f8882749060b059fe26eb02f7f843b',1,'SceneNode']]],
-  ['setscale_4',['setScale',['../class_scene_node.html#a753cea60b8a939a82a47258f4a51df82',1,'SceneNode']]],
-  ['setvelocity_5',['setVelocity',['../class_entity.html#a472e1690df5fb48c6c7f052e4cb39c78',1,'Entity::setVelocity(XMFLOAT3 velocity)'],['../class_entity.html#abb3c22fe7e78968131560642e360e12b',1,'Entity::setVelocity(float vx, float vy, float vz)']]],
-  ['setworldrotation_6',['setWorldRotation',['../class_scene_node.html#a66fa14e7553900ae540f13e4dc5f749b',1,'SceneNode']]],
-  ['startindexlocation_7',['StartIndexLocation',['../struct_render_item.html#a979179c6dd354cd329563e3599245463',1,'RenderItem']]]
+  ['player_0',['Player',['../class_player.html',1,'Player'],['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()']]],
+  ['player_2ecpp_1',['Player.cpp',['../_player_8cpp.html',1,'']]],
+  ['player_2eh_2',['Player.h',['../_player_8h.html',1,'']]],
+  ['playeraircraft_3',['PlayerAircraft',['../namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679',1,'Category']]],
+  ['pop_4',['pop',['../class_command_queue.html#ac2dde510222b8df393b55978f4594194',1,'CommandQueue']]],
+  ['primitivetype_5',['PrimitiveType',['../struct_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]],
+  ['processinput_6',['processInput',['../class_game.html#a815a3ec2787b4b1c4077d28165c380e8',1,'Game']]],
+  ['ptr_7',['Ptr',['../class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a',1,'SceneNode']]],
+  ['push_8',['push',['../class_command_queue.html#ad444e0d7af45d9e09b834f0cec1e1f43',1,'CommandQueue']]]
 ];
