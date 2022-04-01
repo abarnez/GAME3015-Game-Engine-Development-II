@@ -29,6 +29,7 @@ public:
 	
 private:
 	void updateCurrent(const GameTimer& gt);
+	void check(const GameTimer& gt);
 	virtual void drawCurrent() const;
 	virtual void buildCurrent();
 

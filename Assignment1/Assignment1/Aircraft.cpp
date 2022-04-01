@@ -18,39 +18,9 @@ Aircraft::Aircraft(Type type, Game* game) : Entity(game), mType(type)
 }
 
 void Aircraft::updateCurrent(const GameTimer& gt)
-{
-	
-	
-	XMFLOAT3 pos = this->getWorldPosition(); //get player position
-	XMFLOAT3 vel = this->getVelocity();	
-	/*//get player velocity
-	if (pos.x >= 6 || pos.x <= -6) {		 //once they get to either side of the screen 
-		vel.x = -vel.x;						 //flip the velocity from -/+ or +/-
-
-	}
-	*/
-	const float playerSpeed = 200.f;
-	if (GetAsyncKeyState('W')) {
-		vel.z = 2;
-	}
-	else if (GetAsyncKeyState('S')) {
-		vel.z = -2;
-	}
-	else {
-		vel.z = 0;
-	}
-	if (GetAsyncKeyState('A')) {
-		vel.x = -2;
-	}
-	else if (GetAsyncKeyState('D')) {
-		vel.x = 2;
-	}
-	else {
-		vel.x = 0;
-	}
-	this->setVelocity(vel);					 //Set the players x velocity to this
-	Entity::updateCurrent(gt);				 //Update 
-	
+{	
+	Aircraft::check(gt);
+	Entity::updateCurrent(gt);				 //Update 						
 }
 
 void Aircraft::drawCurrent() const
@@ -84,4 +54,67 @@ unsigned int Aircraft::getCategory() const
 	default:
 		return Category::EnemyAircraft;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void Aircraft::check(const GameTimer& gt)
+{
+	XMFLOAT3 pos = this->getWorldPosition(); //get player position
+	XMFLOAT3 vel = this->getVelocity();
+	if (GetAsyncKeyState(VK_UP)) {
+		vel.z = 2;
+	}
+	else if (GetAsyncKeyState(VK_DOWN)) {
+		vel.z = -2;
+	}
+	else {
+		vel.z = 0;
+	}
+	if (GetAsyncKeyState(VK_LEFT)) {
+		vel.x = -2;
+	}
+	else if (GetAsyncKeyState(VK_RIGHT)) {
+		vel.x = 2;
+	}
+	else {
+		vel.x = 0;
+	}
+	this->setVelocity(vel);					 //Set the players x velocity to this
+	//Entity::updateCurrent(gt);				 //Update 	
 }
