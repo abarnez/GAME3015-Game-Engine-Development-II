@@ -19,7 +19,7 @@ struct AircraftMover
 
 	void operator() (Aircraft& aircraft,const GameTimer&) const
 	{
-		aircraft.accelerate(velocity.x, velocity.y, velocity.z);
+		aircraft.accelerate(velocity);
 	}
 
 	XMFLOAT3 velocity;
@@ -61,6 +61,7 @@ void Player::handleEvent(CommandQueue& commands)
 	//	if (found != mKeyBinding.end() && !isRealtimeAction(found->second))
 	//		commands.push(mActionBinding[found->second]);
 	//}
+
 
 	for (auto pair : mKeyBinding)
 	{
