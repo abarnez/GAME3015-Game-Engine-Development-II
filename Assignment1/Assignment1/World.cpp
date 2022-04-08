@@ -1,7 +1,7 @@
 #include "World.h"
 
 World::World(Game* game)	: mSceneGraph(new SceneNode(game))	, mGame(game)	, mPlayerAircraft(nullptr)	, mBackground(nullptr)	, mBackground2(nullptr)
-	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)	, mSpawnPosition(0.f, 0.f)	, mMoveSpeed(-0.f) 
+	, mWorldBounds(0.f, 0.f, 600.f, 2000.f)	, mSpawnPosition(0.f, 0.f)	, mMoveSpeed(-0.f) , mSplashScreen(nullptr)
 {
 }
 
@@ -64,6 +64,13 @@ void World::buildScene()
 	mBackground2->setScale(1.0, 1.0, 1);
 	mBackground2->setVelocity(0.0, 0.0, -5.0);
 	mSceneGraph->attachChild(std::move(backgroundSprite2));
+
+	std::unique_ptr<SplashScreen> dSplashScreen(new SplashScreen(mGame));
+	mSplashScreen = (SplashScreen*)dSplashScreen.get();
+	mSplashScreen->setPosition(0, 2.6, 0);
+	mSplashScreen->setScale(1.0, 1.0, 1);
+	mSplashScreen->setVelocity(0.0, 0.0, 0.0);
+	mSceneGraph->attachChild(std::move(dSplashScreen));
 
 	mSceneGraph->build();
 }

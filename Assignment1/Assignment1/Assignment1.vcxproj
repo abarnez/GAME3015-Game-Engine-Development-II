@@ -162,6 +162,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneNode.cpp" />
     <ClCompile Include="Background.cpp" />
+    <ClCompile Include="SplashScreen.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +186,7 @@
     <ClInclude Include="RenderItem.h" />
     <ClInclude Include="SceneNode.h" />
     <ClInclude Include="Background.h" />
+    <ClInclude Include="SplashScreen.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

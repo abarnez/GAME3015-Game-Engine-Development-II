@@ -98,7 +98,7 @@ void Aircraft::check(const GameTimer& gt)
 	XMFLOAT3 pos = this->getWorldPosition(); //get player position
 	XMFLOAT3 vel = this->getVelocity();
 	if (GetAsyncKeyState(VK_UP)) {
-		vel.z = 2;
+		vel.z = 2;	
 	}
 	else if (GetAsyncKeyState(VK_DOWN)) {
 		vel.z = -2;

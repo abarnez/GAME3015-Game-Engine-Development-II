@@ -14,6 +14,7 @@
 #include "Background.h"
 #include "CommandQueue.h"
 #include "Command.h"
+#include "SplashScreen.h"
 
 class World
 {
@@ -47,5 +48,7 @@ private:
 	Aircraft* mPlayerAircraft;
 	Aircraft* escort1;
 	Aircraft* escort2;
+
+	SplashScreen* mSplashScreen;
 };
 
