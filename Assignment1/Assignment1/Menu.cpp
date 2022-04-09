@@ -1,37 +1,47 @@
-#include "SplashScreen.h"
+#include "Menu.h"
 #include "Game.h"
 #include <iostream>
-SplashScreen::SplashScreen(Game* game) : Entity(game)
+Menu::Menu(Game* game) : Entity(game)
 {
 }
 
-void SplashScreen::updateCurrent(const GameTimer& gt)
+void Menu::updateCurrent(const GameTimer& gt)
 {
-	/*
-	XMFLOAT3 pos1 = this->getWorldPosition();	//Get Position of the background
-	if (pos1.z < -17.5) {						//Check the Z position to see if it has gone off screen
-		this->setPosition(0, 0, 18.5);			//If it has reset its position to the top of the screen
+	if (GetAsyncKeyState('C')) {
+		show = false;
 	}
-	*/
+	if (GetAsyncKeyState('P') & 0x8000) {
+
+		show = true;
+
+	}
+	if (GetAsyncKeyState(VK_RETURN)) {
+		this->setPosition(0.f, -5.f, 0.f);
+	}
+	if (show) {
+		if (GetAsyncKeyState(VK_BACK)) {
+			this->setPosition(1, 2.55, -3);
+		}
+	}
 	Entity::updateCurrent(gt);
-	SplashScreen::check(gt);
-	
+	Menu::check(gt);
+
 }
 
-void SplashScreen::drawCurrent() const
+void Menu::drawCurrent() const
 {
 	renderer->World = getTransform();
 	renderer->NumFramesDirty++;
 }
 
-void SplashScreen::buildCurrent()
+void Menu::buildCurrent()
 {
 	auto render = std::make_unique<RenderItem>();
 	renderer = render.get();
 	renderer->World = getTransform();
 	XMStoreFloat4x4(&renderer->TexTransform, XMMatrixScaling(1.0f, 1.4f, 1.0f));
 	renderer->ObjCBIndex = game->getRenderItems().size();
-	renderer->Mat = game->getMaterials()["Splash"].get();
+	renderer->Mat = game->getMaterials()["MenuTex"].get();
 	renderer->Geo = game->getGeometries()["boxGeo"].get();
 	renderer->PrimitiveType = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
 	renderer->IndexCount = renderer->Geo->DrawArgs["box"].IndexCount;
@@ -40,10 +50,11 @@ void SplashScreen::buildCurrent()
 	game->getRenderItems().push_back(std::move(render));
 }
 
-void SplashScreen::check(const GameTimer& gt) {
-	
-	if(GetAsyncKeyState('Q'))
-	this->setPosition(0.f, -1.f, 0.f);
+void Menu::check(const GameTimer& gt) {
 
-	
+
+
+
+
+
 }

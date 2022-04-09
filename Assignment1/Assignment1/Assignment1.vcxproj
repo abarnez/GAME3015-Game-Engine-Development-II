@@ -159,10 +159,13 @@
     <ClCompile Include="FrameResource.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Pause.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneNode.cpp" />
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="SplashScreen.cpp" />
+    <ClCompile Include="Text.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -182,11 +185,14 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FrameResource.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Pause.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RenderItem.h" />
     <ClInclude Include="SceneNode.h" />
     <ClInclude Include="Background.h" />
     <ClInclude Include="SplashScreen.h" />
+    <ClInclude Include="Text.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

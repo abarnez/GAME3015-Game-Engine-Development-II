@@ -261,6 +261,51 @@ void Game::LoadTextures()
 		SplashTex->Resource, SplashTex->UploadHeap));
 
 	mTextures[SplashTex->Name] = std::move(SplashTex);
+
+	auto SplashText = std::make_unique<Texture>();
+	SplashText->Name = "SplashText";
+	SplashText->Filename = L"Textures/SplashText.dds";
+	ThrowIfFailed(DirectX::CreateDDSTextureFromFile12(md3dDevice.Get(),
+		mCommandList.Get(), SplashText->Filename.c_str(),
+		SplashText->Resource, SplashText->UploadHeap));
+
+	mTextures[SplashText->Name] = std::move(SplashText);
+
+	auto MenuTex = std::make_unique<Texture>();
+	MenuTex->Name = "MenuTex";
+	MenuTex->Filename = L"Textures/Menu.dds";
+	ThrowIfFailed(DirectX::CreateDDSTextureFromFile12(md3dDevice.Get(),
+		mCommandList.Get(), MenuTex->Filename.c_str(),
+		MenuTex->Resource, MenuTex->UploadHeap));
+
+	mTextures[MenuTex->Name] = std::move(MenuTex);
+
+	auto MenuText1 = std::make_unique<Texture>();
+	MenuText1->Name = "MenuText1";
+	MenuText1->Filename = L"Textures/MenuText1.dds";
+	ThrowIfFailed(DirectX::CreateDDSTextureFromFile12(md3dDevice.Get(),
+		mCommandList.Get(), MenuText1->Filename.c_str(),
+		MenuText1->Resource, MenuText1->UploadHeap));
+
+	mTextures[MenuText1->Name] = std::move(MenuText1);
+
+	auto MenuText2 = std::make_unique<Texture>();
+	MenuText2->Name = "MenuText2";
+	MenuText2->Filename = L"Textures/MenuText2.dds";
+	ThrowIfFailed(DirectX::CreateDDSTextureFromFile12(md3dDevice.Get(),
+		mCommandList.Get(), MenuText2->Filename.c_str(),
+		MenuText2->Resource, MenuText2->UploadHeap));
+
+	mTextures[MenuText2->Name] = std::move(MenuText2);
+
+	auto PauseTex = std::make_unique<Texture>();
+	PauseTex->Name = "PauseTex";
+	PauseTex->Filename = L"Textures/Pause.dds";
+	ThrowIfFailed(DirectX::CreateDDSTextureFromFile12(md3dDevice.Get(),
+		mCommandList.Get(), PauseTex->Filename.c_str(),
+		PauseTex->Resource, PauseTex->UploadHeap));
+
+	mTextures[PauseTex->Name] = std::move(PauseTex);
 }
 
 void Game::BuildRootSignature()
@@ -303,7 +348,7 @@ void Game::BuildRootSignature()
 void Game::BuildDescriptorHeaps()
 {
 	D3D12_DESCRIPTOR_HEAP_DESC srvHeapDesc = {};
-	srvHeapDesc.NumDescriptors = 4;
+	srvHeapDesc.NumDescriptors = 9;
 	srvHeapDesc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV;
 	srvHeapDesc.Flags = D3D12_DESCRIPTOR_HEAP_FLAG_SHADER_VISIBLE;
 	ThrowIfFailed(md3dDevice->CreateDescriptorHeap(&srvHeapDesc, IID_PPV_ARGS(&mSrvDescriptorHeap)));
@@ -314,6 +359,11 @@ void Game::BuildDescriptorHeaps()
 	auto RaptorTex = mTextures["RaptorTex"]->Resource;
 	auto DesertTex = mTextures["DesertTex"]->Resource;
 	auto SplashTex = mTextures["SplashTex"]->Resource;
+	auto SplashText = mTextures["SplashText"]->Resource;
+	auto MenuTex = mTextures["MenuTex"]->Resource;
+	auto MenuText1 = mTextures["MenuText1"]->Resource;
+	auto MenuText2 = mTextures["MenuText2"]->Resource;
+	auto PauseTex = mTextures["PauseTex"]->Resource;
 
 	D3D12_SHADER_RESOURCE_VIEW_DESC srvDesc = {};
 
@@ -341,6 +391,26 @@ void Game::BuildDescriptorHeaps()
 	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
 	srvDesc.Format = SplashTex->GetDesc().Format;
 	md3dDevice->CreateShaderResourceView(SplashTex.Get(), &srvDesc, hDescriptor);
+
+	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
+	srvDesc.Format = SplashText->GetDesc().Format;
+	md3dDevice->CreateShaderResourceView(SplashText.Get(), &srvDesc, hDescriptor);
+
+	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
+	srvDesc.Format = MenuTex->GetDesc().Format;
+	md3dDevice->CreateShaderResourceView(MenuTex.Get(), &srvDesc, hDescriptor);
+
+	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
+	srvDesc.Format = MenuText1->GetDesc().Format;
+	md3dDevice->CreateShaderResourceView(MenuText1.Get(), &srvDesc, hDescriptor);
+
+	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
+	srvDesc.Format = MenuText2->GetDesc().Format;
+	md3dDevice->CreateShaderResourceView(MenuText2.Get(), &srvDesc, hDescriptor);
+
+	hDescriptor.Offset(1, mCbvSrvDescriptorSize);
+	srvDesc.Format = PauseTex->GetDesc().Format;
+	md3dDevice->CreateShaderResourceView(PauseTex.Get(), &srvDesc, hDescriptor);
 }
 
 void Game::BuildShadersAndInputLayout()
@@ -478,13 +548,63 @@ void Game::BuildMaterials()
 
 	auto Splash = std::make_unique<Material>();
 	Splash->Name = "Splash";
-	Splash->MatCBIndex = 2;
+	Splash->MatCBIndex = 3;
 	Splash->DiffuseSrvHeapIndex = 3;
 	Splash->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
 	Splash->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
 	Splash->Roughness = 0.2f;
 
 	mMaterials["Splash"] = std::move(Splash);
+
+	auto SplashText = std::make_unique<Material>();
+	SplashText->Name = "SplashText";
+	SplashText->MatCBIndex = 4;
+	SplashText->DiffuseSrvHeapIndex = 4;
+	SplashText->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+	SplashText->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
+	SplashText->Roughness = 0.2f;
+
+	mMaterials["SplashText"] = std::move(SplashText);
+
+	auto MenuTex = std::make_unique<Material>();
+	MenuTex->Name = "MenuTex";
+	MenuTex->MatCBIndex = 5;
+	MenuTex->DiffuseSrvHeapIndex = 5;
+	MenuTex->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+	MenuTex->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
+	MenuTex->Roughness = 0.2f;
+
+	mMaterials["MenuTex"] = std::move(MenuTex);
+
+	auto MenuText1 = std::make_unique<Material>();
+	MenuText1->Name = "MenuText1";
+	MenuText1->MatCBIndex = 6;
+	MenuText1->DiffuseSrvHeapIndex = 6;
+	MenuText1->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+	MenuText1->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
+	MenuText1->Roughness = 0.2f;
+
+	mMaterials["MenuText1"] = std::move(MenuText1);
+
+	auto MenuText2 = std::make_unique<Material>();
+	MenuText2->Name = "MenuText2";
+	MenuText2->MatCBIndex = 7;
+	MenuText2->DiffuseSrvHeapIndex = 7;
+	MenuText2->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+	MenuText2->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
+	MenuText2->Roughness = 0.2f;
+
+	mMaterials["MenuText2"] = std::move(MenuText2);
+
+	auto PauseTex = std::make_unique<Material>();
+	PauseTex->Name = "PauseTex";
+	PauseTex->MatCBIndex = 8;
+	PauseTex->DiffuseSrvHeapIndex = 8;
+	PauseTex->DiffuseAlbedo = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f);
+	PauseTex->FresnelR0 = XMFLOAT3(0.05f, 0.05f, 0.05f);
+	PauseTex->Roughness = 0.2f;
+
+	mMaterials["PauseTex"] = std::move(PauseTex);
 
 }
 

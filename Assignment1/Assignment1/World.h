@@ -15,6 +15,9 @@
 #include "CommandQueue.h"
 #include "Command.h"
 #include "SplashScreen.h"
+#include "Text.h"
+#include "Pause.h"
+#include "Menu.h"
 
 class World
 {
@@ -50,5 +53,8 @@ private:
 	Aircraft* escort2;
 
 	SplashScreen* mSplashScreen;
+	Text* mText;
+	Pause* mPause;
+	Menu* mMenu;
 };
 

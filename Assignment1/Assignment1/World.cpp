@@ -67,10 +67,31 @@ void World::buildScene()
 
 	std::unique_ptr<SplashScreen> dSplashScreen(new SplashScreen(mGame));
 	mSplashScreen = (SplashScreen*)dSplashScreen.get();
-	mSplashScreen->setPosition(0, 2.6, 0);
+	mSplashScreen->setPosition(0, 2.6, -3);
 	mSplashScreen->setScale(1.0, 1.0, 1);
 	mSplashScreen->setVelocity(0.0, 0.0, 0.0);
 	mSceneGraph->attachChild(std::move(dSplashScreen));
+
+	std::unique_ptr<Text> texts(new Text(Text::SplashText, mGame));
+	mText = (Text*)texts.get();
+	mText->setPosition(0, 2.7, 0);
+	mText->setScale(0.5, 0.5, 0.05);
+	mText->setVelocity(0.0, 0.0, 0.0);
+	mSceneGraph->attachChild(std::move(texts));
+
+	std::unique_ptr<Pause> gPause(new Pause(mGame));
+	mPause = (Pause*)gPause.get();
+	mPause->setPosition(0, -1.0, 0);
+	mPause->setScale(0.9, 1.0, 1.0);
+	mPause->setVelocity(0.0, 0.0, 0.0);
+	mSceneGraph->attachChild(std::move(gPause));
+
+	std::unique_ptr<Menu> gMenu(new Menu(mGame));
+	mMenu = (Menu*)gMenu.get();
+	mMenu->setPosition(1, 2.55, -3);
+	mMenu->setScale(1.0, 1.0, 1.0);
+	mMenu->setVelocity(0.0, 0.0, 0.0);
+	mSceneGraph->attachChild(std::move(gMenu));
 
 	mSceneGraph->build();
 }
