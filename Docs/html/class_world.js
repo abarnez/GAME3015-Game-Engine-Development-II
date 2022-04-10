@@ -16,10 +16,14 @@ var class_world =
     [ "mBackground2", "class_world.html#a6d2c54b0b936c12e9eaf34596190148b", null ],
     [ "mCommandQueue", "class_world.html#a9d71cb20104cb74327b561a93db34a54", null ],
     [ "mGame", "class_world.html#a625a8dbdd805000904fb376215ca4c0a", null ],
+    [ "mMenu", "class_world.html#af14a05d434e6b5ea24c6193842cb5c5e", null ],
     [ "mMoveSpeed", "class_world.html#aa0c3a103450974c84af8726647494e73", null ],
+    [ "mPause", "class_world.html#a28eb9a8c643f25c2c1219ad7783cec09", null ],
     [ "mPlayerAircraft", "class_world.html#a5e511d7599995d30084959c91d98e13d", null ],
     [ "mSceneGraph", "class_world.html#abf9d49d6f67de1caff82e111a4f29040", null ],
     [ "mSceneLayers", "class_world.html#a6edbba54ac354295d50128255c7a0e70", null ],
     [ "mSpawnPosition", "class_world.html#a8bde7886e9d66e6bda46921d97186f66", null ],
+    [ "mSplashScreen", "class_world.html#ad09f20a55fad495cd49dc4512b1fa931", null ],
+    [ "mText", "class_world.html#a8806c715fe0e85a4a15a5c74d9beb444", null ],
     [ "mWorldBounds", "class_world.html#a3be772106be584dff01efa4a27fc13a7", null ]
 ];

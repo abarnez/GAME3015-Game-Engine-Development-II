@@ -11,6 +11,11 @@ var hierarchy =
     [ "SceneNode", "class_scene_node.html", [
       [ "Entity", "class_entity.html", [
         [ "Aircraft", "class_aircraft.html", null ],
+        [ "Menu", "class_menu.html", null ],
+        [ "Pause", "class_pause.html", null ],
+        [ "SplashScreen", "class_splash_screen.html", null ],
+        [ "SpriteNode", "class_sprite_node.html", null ],
+        [ "Text", "class_text.html", null ],
         [ "bckGround", "classbck_ground.html", null ]
       ] ]
     ] ],

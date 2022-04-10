@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Game Engine Development II Assignment 2", "index.html", [
+  [ "Game Engine Development II Final Project", "index.html", [
     [ "Game Engine Development II Documentations", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -39,7 +39,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
@@ -61,7 +61,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aircraft_8cpp.html",
-"struct_render_item.html#a7e4ddbefdc41b7efcad3c3a4b0ceccd9"
+"class_world.html#a8806c715fe0e85a4a15a5c74d9beb444"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

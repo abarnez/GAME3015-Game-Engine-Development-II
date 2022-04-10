@@ -25,6 +25,14 @@ var dir_06f6cac14b175508cf2e80ea8dad5afc =
       [ "Game", "class_game.html", "class_game" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
+    [ "Menu.cpp", "_menu_8cpp.html", null ],
+    [ "Menu.h", "_menu_8h.html", [
+      [ "Menu", "class_menu.html", "class_menu" ]
+    ] ],
+    [ "Pause.cpp", "_pause_8cpp.html", null ],
+    [ "Pause.h", "_pause_8h.html", [
+      [ "Pause", "class_pause.html", "class_pause" ]
+    ] ],
     [ "Player.cpp", "_player_8cpp.html", [
       [ "AircraftMover", "struct_aircraft_mover.html", "struct_aircraft_mover" ]
     ] ],
@@ -35,6 +43,18 @@ var dir_06f6cac14b175508cf2e80ea8dad5afc =
     [ "SceneNode.h", "_scene_node_8h.html", [
       [ "RenderItem", "struct_render_item.html", "struct_render_item" ],
       [ "SceneNode", "class_scene_node.html", "class_scene_node" ]
+    ] ],
+    [ "SpirteNode.cpp", "_spirte_node_8cpp.html", null ],
+    [ "SplashScreen.cpp", "_splash_screen_8cpp.html", null ],
+    [ "SplashScreen.h", "_splash_screen_8h.html", [
+      [ "SplashScreen", "class_splash_screen.html", "class_splash_screen" ]
+    ] ],
+    [ "SpriteNode.h", "_sprite_node_8h.html", [
+      [ "SpriteNode", "class_sprite_node.html", "class_sprite_node" ]
+    ] ],
+    [ "Text.cpp", "_text_8cpp.html", null ],
+    [ "Text.h", "_text_8h.html", [
+      [ "Text", "class_text.html", "class_text" ]
     ] ],
     [ "World.cpp", "_world_8cpp.html", null ],
     [ "World.h", "_world_8h.html", [
