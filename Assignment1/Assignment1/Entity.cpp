@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include "MathHelper.h"
 
 Entity::Entity(Game* game) : SceneNode(game), mVelocity(0, 0, 0)
 {
@@ -39,6 +40,17 @@ void Entity::updateChildren(const GameTimer & gt)
 		mV.y = mVelocity.y * gt.DeltaTime();
 		mV.z = mVelocity.z * gt.DeltaTime();
 		child->move(mV.x, mV.y, mV.z);
+
+		/*if ((mV.x + mV.y + mV.z) == 0)
+		{
+			OutputDebugString(L"Updating Children\n");
+			XMFLOAT3 mV;
+			mV.x = child->getWorldPosition().x - this->getWorldPosition().x;
+			mV.y = child->getWorldPosition().y - this->getWorldPosition().y;
+			mV.z = child->getWorldPosition().z - this->getWorldPosition().z;
+			
+			child->setPosition(mV.x, mV.y, mV.z);
+		}*/
 	}
 }
 

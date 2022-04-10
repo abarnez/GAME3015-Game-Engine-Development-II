@@ -25,4 +25,5 @@ private:
 	Menu mMenu;
 	std::string	mSprite;
 	bool flash;
+	bool show;
 };
