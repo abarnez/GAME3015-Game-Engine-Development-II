@@ -56,11 +56,6 @@ void Text::check(const GameTimer& gt)
 		this->setPosition(0.f, -1.f, 0.f);
 	
 
-	//if (GetAsyncKeyState(VK_RETURN))// && 
-	//	//(mSprite == "MenuText1" || mSprite == "MenuText2"))
-	//{
-	//	this->setPosition(0.f, -5.f, 0.f);
-	//}
 
 	if (GetAsyncKeyState('C')) 
 	{

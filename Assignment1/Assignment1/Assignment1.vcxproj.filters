@@ -40,7 +40,6 @@
     <ClCompile Include="Pause.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="SpirteNode.cpp" />
-    <ClCompile Include="MenuText.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aircraft.h" />
@@ -91,7 +90,6 @@
     <ClInclude Include="Pause.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SpriteNode.h" />
-    <ClInclude Include="MenuText.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">

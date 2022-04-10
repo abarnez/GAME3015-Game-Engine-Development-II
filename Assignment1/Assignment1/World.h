@@ -15,7 +15,6 @@
 #include "CommandQueue.h"
 #include "Command.h"
 #include "SplashScreen.h"
-#include "MenuText.h"
 #include "Text.h"
 #include "Pause.h"
 #include "Menu.h"
@@ -59,7 +58,5 @@ private:
 	Text* mText2;
 	Pause* mPause;
 	Menu* mMenu;
-	MenuText* mMenuText;
-	MenuText* mMenuText2;
 };
 
