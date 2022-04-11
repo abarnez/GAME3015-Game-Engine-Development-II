@@ -166,6 +166,8 @@
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="SpirteNode.cpp" />
     <ClCompile Include="SplashScreen.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateStack.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -194,6 +196,9 @@
     <ClInclude Include="Background.h" />
     <ClInclude Include="SplashScreen.h" />
     <ClInclude Include="SpriteNode.h" />
+    <ClInclude Include="State.hpp" />
+    <ClInclude Include="StateIdentifiers.h" />
+    <ClInclude Include="StateStack.hpp" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

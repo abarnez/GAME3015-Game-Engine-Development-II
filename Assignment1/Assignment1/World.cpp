@@ -98,14 +98,14 @@ void World::buildScene()
 	mText1->setPosition(0, 2.63, 0);
 	mText1->setScale(0.5, 0.5, 0.5);
 	mText1->setVelocity(0.0, 0.0, 0.0);
-	mMenu->attachChild(std::move(playText));
+	mSceneGraph->attachChild(std::move(playText));
 
 	std::unique_ptr<Text> pauseText(new Text(Text::MenuText2, mGame));
 	mText2 = (Text*)pauseText.get();
 	mText2->setPosition(0, 2.63, 0);
 	mText2->setScale(0.5, 0.5, 0.5);
 	mText2->setVelocity(0.0, 0.0, 0.0);
-	mMenu->attachChild(std::move(pauseText));
+	mSceneGraph->attachChild(std::move(pauseText));
 
 	mSceneGraph->build();
 }
