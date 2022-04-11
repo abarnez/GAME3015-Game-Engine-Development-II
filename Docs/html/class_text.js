@@ -12,5 +12,6 @@ var class_text =
     [ "updateCurrent", "class_text.html#a44fd6e0be7d463563008039cd0d5c87d", null ],
     [ "flash", "class_text.html#a1de23e52794b8a0dbbcc699f12b1784c", null ],
     [ "mMenu", "class_text.html#ae0c6a4b080ce517be0fd08abe3c58a1c", null ],
-    [ "mSprite", "class_text.html#a4b9cc06e28cf884106f5f694ed27f7c5", null ]
+    [ "mSprite", "class_text.html#a4b9cc06e28cf884106f5f694ed27f7c5", null ],
+    [ "show", "class_text.html#ac13d62f66692284f32de7d25340b81e8", null ]
 ];

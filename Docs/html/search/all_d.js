@@ -1,15 +1,21 @@
 var searchData=
 [
-  ['pause_0',['Pause',['../class_pause.html',1,'Pause'],['../class_pause.html#a4f3f64769a4ab99e20cce41353f720b7',1,'Pause::Pause()']]],
+  ['pause_0',['Pause',['../class_pause.html',1,'Pause'],['../class_pause.html#a4f3f64769a4ab99e20cce41353f720b7',1,'Pause::Pause()'],['../namespace_states.html#a571a0dc62822f97bb9511eb013d8e1c3a7cbdc18ae28451f619eac360e384790a',1,'States::Pause()']]],
   ['pause_2ecpp_1',['Pause.cpp',['../_pause_8cpp.html',1,'']]],
   ['pause_2eh_2',['Pause.h',['../_pause_8h.html',1,'']]],
-  ['player_3',['Player',['../class_player.html',1,'Player'],['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()']]],
-  ['player_2ecpp_4',['Player.cpp',['../_player_8cpp.html',1,'']]],
-  ['player_2eh_5',['Player.h',['../_player_8h.html',1,'']]],
-  ['playeraircraft_6',['PlayerAircraft',['../namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679',1,'Category']]],
-  ['pop_7',['pop',['../class_command_queue.html#ac2dde510222b8df393b55978f4594194',1,'CommandQueue']]],
-  ['primitivetype_8',['PrimitiveType',['../struct_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]],
-  ['processinput_9',['processInput',['../class_game.html#a815a3ec2787b4b1c4077d28165c380e8',1,'Game']]],
-  ['ptr_10',['Ptr',['../class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a',1,'SceneNode']]],
-  ['push_11',['push',['../class_command_queue.html#ad444e0d7af45d9e09b834f0cec1e1f43',1,'CommandQueue']]]
+  ['pendingchange_3',['PendingChange',['../struct_state_stack_1_1_pending_change.html#adf295f13761e75276203d45bd34d984a',1,'StateStack::PendingChange::PendingChange()'],['../struct_state_stack_1_1_pending_change.html',1,'StateStack::PendingChange']]],
+  ['player_4',['Player',['../class_player.html',1,'Player'],['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()']]],
+  ['player_5',['player',['../struct_state_1_1_context.html#a1c98434687748acdebf78fd80a4767ad',1,'State::Context']]],
+  ['player_2ecpp_6',['Player.cpp',['../_player_8cpp.html',1,'']]],
+  ['player_2eh_7',['Player.h',['../_player_8h.html',1,'']]],
+  ['playeraircraft_8',['PlayerAircraft',['../namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679',1,'Category']]],
+  ['pop_9',['pop',['../class_command_queue.html#ac2dde510222b8df393b55978f4594194',1,'CommandQueue']]],
+  ['pop_10',['Pop',['../class_state_stack.html#af804142a55cd477767353e0abbcc218cada9c92031672d7627190e17bf881889a',1,'StateStack']]],
+  ['popstate_11',['popState',['../class_state_stack.html#a7e050a57b798295c2344f1318765b5ee',1,'StateStack']]],
+  ['primitivetype_12',['PrimitiveType',['../struct_render_item.html#ab3aad9050526250c4877956789e50b3a',1,'RenderItem']]],
+  ['processinput_13',['processInput',['../class_game.html#a815a3ec2787b4b1c4077d28165c380e8',1,'Game']]],
+  ['ptr_14',['Ptr',['../class_scene_node.html#aaf5c9ad8475874b51b70e400822f2e9a',1,'SceneNode::Ptr()'],['../class_state.html#a71d9930be1a58be7f711e245b7965d48',1,'State::Ptr()']]],
+  ['push_15',['push',['../class_command_queue.html#ad444e0d7af45d9e09b834f0cec1e1f43',1,'CommandQueue']]],
+  ['push_16',['Push',['../class_state_stack.html#af804142a55cd477767353e0abbcc218ca5145d891d6770f76760d0b17cdfec0ab',1,'StateStack']]],
+  ['pushstate_17',['pushState',['../class_state_stack.html#a80ed85f0fc13039e6f4c7dfef19e608f',1,'StateStack']]]
 ];

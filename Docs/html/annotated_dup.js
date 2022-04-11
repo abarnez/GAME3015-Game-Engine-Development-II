@@ -14,6 +14,8 @@ var annotated_dup =
     [ "SceneNode", "class_scene_node.html", "class_scene_node" ],
     [ "SplashScreen", "class_splash_screen.html", "class_splash_screen" ],
     [ "SpriteNode", "class_sprite_node.html", "class_sprite_node" ],
+    [ "State", "class_state.html", "class_state" ],
+    [ "StateStack", "class_state_stack.html", "class_state_stack" ],
     [ "Text", "class_text.html", "class_text" ],
     [ "World", "class_world.html", "class_world" ]
 ];

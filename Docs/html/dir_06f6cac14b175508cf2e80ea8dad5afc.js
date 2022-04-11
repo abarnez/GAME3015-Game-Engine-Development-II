@@ -52,6 +52,17 @@ var dir_06f6cac14b175508cf2e80ea8dad5afc =
     [ "SpriteNode.h", "_sprite_node_8h.html", [
       [ "SpriteNode", "class_sprite_node.html", "class_sprite_node" ]
     ] ],
+    [ "State.cpp", "_state_8cpp.html", null ],
+    [ "State.hpp", "_state_8hpp.html", [
+      [ "State", "class_state.html", "class_state" ],
+      [ "State::Context", "struct_state_1_1_context.html", "struct_state_1_1_context" ]
+    ] ],
+    [ "StateIdentifiers.h", "_state_identifiers_8h.html", "_state_identifiers_8h" ],
+    [ "StateStack.cpp", "_state_stack_8cpp.html", null ],
+    [ "StateStack.hpp", "_state_stack_8hpp.html", [
+      [ "StateStack", "class_state_stack.html", "class_state_stack" ],
+      [ "StateStack::PendingChange", "struct_state_stack_1_1_pending_change.html", "struct_state_stack_1_1_pending_change" ]
+    ] ],
     [ "Text.cpp", "_text_8cpp.html", null ],
     [ "Text.h", "_text_8h.html", [
       [ "Text", "class_text.html", "class_text" ]

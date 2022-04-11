@@ -15,6 +15,7 @@ var searchData=
   ['buildrenderitems_12',['BuildRenderItems',['../class_game.html#abf31d9be82e627510c9c2d6e0e012cc8',1,'Game']]],
   ['buildrootsignature_13',['BuildRootSignature',['../class_game.html#aa02e07384ccea21f7421ca60967c1fa5',1,'Game']]],
   ['buildscene_14',['buildScene',['../class_world.html#ae7df49f5d488e5cd1254bf360966f410',1,'World']]],
-  ['buildshadersandinputlayout_15',['BuildShadersAndInputLayout',['../class_game.html#adc0692c304c05a5a281d88622b39c498',1,'Game']]],
-  ['buildshapegeometry_16',['BuildShapeGeometry',['../class_game.html#a6ee7b6d7f54345be7f6b406166dccb45',1,'Game']]]
+  ['buildscene_15',['BuildScene',['../class_state.html#ad0a7d5cb4879d0429e38eee80bae0f1c',1,'State']]],
+  ['buildshadersandinputlayout_16',['BuildShadersAndInputLayout',['../class_game.html#adc0692c304c05a5a281d88622b39c498',1,'Game']]],
+  ['buildshapegeometry_17',['BuildShapeGeometry',['../class_game.html#a6ee7b6d7f54345be7f6b406166dccb45',1,'Game']]]
 ];

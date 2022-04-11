@@ -25,5 +25,7 @@ var class_world =
     [ "mSpawnPosition", "class_world.html#a8bde7886e9d66e6bda46921d97186f66", null ],
     [ "mSplashScreen", "class_world.html#ad09f20a55fad495cd49dc4512b1fa931", null ],
     [ "mText", "class_world.html#a8806c715fe0e85a4a15a5c74d9beb444", null ],
+    [ "mText1", "class_world.html#abf17c00d379b28d4d448f43d32f05c6a", null ],
+    [ "mText2", "class_world.html#acd5b4aad267284b2623a3b0392f2cfef", null ],
     [ "mWorldBounds", "class_world.html#a3be772106be584dff01efa4a27fc13a7", null ]
 ];

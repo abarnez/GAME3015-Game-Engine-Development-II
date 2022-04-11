@@ -4,6 +4,7 @@ var searchData=
   ['aircraft_1',['Aircraft',['../class_aircraft.html#ae9d52b44a62c33bf411185829158fba4',1,'Aircraft']]],
   ['aircraftmover_2',['AircraftMover',['../struct_aircraft_mover.html#a8f47c770cff72273988f3d249839a533',1,'AircraftMover']]],
   ['animatematerials_3',['AnimateMaterials',['../class_game.html#a7e0c6faa5f2386c3ad80fe5d5a9e11e4',1,'Game']]],
-  ['assignkey_4',['assignKey',['../class_player.html#a1aebc48270700e3052aaf2653be62bc6',1,'Player']]],
-  ['attachchild_5',['attachChild',['../class_scene_node.html#acdfa2c2ba28bce076c886eaba2d9e650',1,'SceneNode']]]
+  ['applypendingchanges_4',['applyPendingChanges',['../class_state_stack.html#af664f95954b4621175c9fc0f9d30fdf0',1,'StateStack']]],
+  ['assignkey_5',['assignKey',['../class_player.html#a1aebc48270700e3052aaf2653be62bc6',1,'Player']]],
+  ['attachchild_6',['attachChild',['../class_scene_node.html#acdfa2c2ba28bce076c886eaba2d9e650',1,'SceneNode']]]
 ];
