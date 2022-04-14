@@ -7,24 +7,7 @@ Pause::Pause(Game* game) : Entity(game)
 
 void Pause::updateCurrent(const GameTimer& gt)
 {
-	if (GetAsyncKeyState('C')) {
-		show = false;
-	}
-	if (GetAsyncKeyState('P') & 0x8000) {
-	
-		show = true;
-		
-	}
-	if (GetAsyncKeyState(VK_BACK)) {
-		show = false;
-	}
-	if (show) {
-		this->setPosition(0, 2.6, -2);
-		
-	}
-	if (!show) {
-		this->setPosition(0.f, -5.f, 0.f);
-	}
+
 	Entity::updateCurrent(gt);
 	Pause::check(gt);
 
@@ -52,10 +35,32 @@ void Pause::buildCurrent()
 	game->getRenderItems().push_back(std::move(render));
 }
 
+
+
+
+
+
 void Pause::check(const GameTimer& gt) {
 
 	
-	
+	if (GetAsyncKeyState('C')) {
+		show = false;
+	}
+	if (GetAsyncKeyState('P') & 0x8000) {
+
+		show = true;
+
+	}
+	if (GetAsyncKeyState(VK_BACK)) {
+		show = false;
+	}
+	if (show) {
+		this->setPosition(0, 2.6, -2);
+
+	}
+	if (!show) {
+		this->setPosition(0.f, -5.f, 0.f);
+	}
 		
 
 
